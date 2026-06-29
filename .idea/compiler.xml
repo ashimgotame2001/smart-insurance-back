@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Gradle Imported" enabled="true">
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.projectlombok/lombok/1.18.36/5a30490a6e14977d97d9c73c924c1f1b5311ea95/lombok-1.18.36.jar" />
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.mapstruct/mapstruct-processor/1.6.3/52e345c907fbf173b376586c7f8b131d53fa5867/mapstruct-processor-1.6.3.jar" />
+        </processorPath>
+        <module name="smart-insurance.main" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="21" />
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_STRING" value="-parameters" />
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="smart-insurance.billing-service" options="-parameters" />
+      <module name="smart-insurance.billing-service.main" options="-parameters" />
+      <module name="smart-insurance.billing-service.test" options="-parameters" />
+      <module name="smart-insurance.claims-service" options="-parameters" />
+      <module name="smart-insurance.claims-service.main" options="-parameters" />
+      <module name="smart-insurance.claims-service.test" options="-parameters" />
+      <module name="smart-insurance.common" options="-parameters" />
+      <module name="smart-insurance.common.main" options="-parameters" />
+      <module name="smart-insurance.common.test" options="-parameters" />
+      <module name="smart-insurance.communication-service" options="-parameters" />
+      <module name="smart-insurance.communication-service.main" options="-parameters" />
+      <module name="smart-insurance.communication-service.test" options="-parameters" />
+      <module name="smart-insurance.compliance-service" options="-parameters" />
+      <module name="smart-insurance.compliance-service.main" options="-parameters" />
+      <module name="smart-insurance.compliance-service.test" options="-parameters" />
+      <module name="smart-insurance.customer-service" options="-parameters" />
+      <module name="smart-insurance.customer-service.main" options="-parameters" />
+      <module name="smart-insurance.customer-service.test" options="-parameters" />
+      <module name="smart-insurance.document-service" options="-parameters" />
+      <module name="smart-insurance.document-service.main" options="-parameters" />
+      <module name="smart-insurance.document-service.test" options="-parameters" />
+      <module name="smart-insurance.finance-service" options="-parameters" />
+      <module name="smart-insurance.finance-service.main" options="-parameters" />
+      <module name="smart-insurance.finance-service.test" options="-parameters" />
+      <module name="smart-insurance.identity-service" options="-parameters" />
+      <module name="smart-insurance.identity-service.main" options="-parameters" />
+      <module name="smart-insurance.identity-service.test" options="-parameters" />
+      <module name="smart-insurance.monolithic-app" options="-parameters" />
+      <module name="smart-insurance.monolithic-app.main" options="-parameters" />
+      <module name="smart-insurance.monolithic-app.test" options="-parameters" />
+      <module name="smart-insurance.partner-service" options="-parameters" />
+      <module name="smart-insurance.partner-service.main" options="-parameters" />
+      <module name="smart-insurance.partner-service.test" options="-parameters" />
+      <module name="smart-insurance.platform-service" options="-parameters" />
+      <module name="smart-insurance.platform-service.main" options="-parameters" />
+      <module name="smart-insurance.platform-service.test" options="-parameters" />
+      <module name="smart-insurance.policy-service" options="-parameters" />
+      <module name="smart-insurance.policy-service.main" options="-parameters" />
+      <module name="smart-insurance.policy-service.test" options="-parameters" />
+      <module name="smart-insurance.product-service" options="-parameters" />
+      <module name="smart-insurance.product-service.main" options="-parameters" />
+      <module name="smart-insurance.product-service.test" options="-parameters" />
+      <module name="smart-insurance.reporting-service" options="-parameters" />
+      <module name="smart-insurance.reporting-service.main" options="-parameters" />
+      <module name="smart-insurance.reporting-service.test" options="-parameters" />
+      <module name="smart-insurance.sales-service" options="-parameters" />
+      <module name="smart-insurance.sales-service.main" options="-parameters" />
+      <module name="smart-insurance.sales-service.test" options="-parameters" />
+      <module name="smart-insurance.underwriting-service" options="-parameters" />
+      <module name="smart-insurance.underwriting-service.main" options="-parameters" />
+      <module name="smart-insurance.underwriting-service.test" options="-parameters" />
+    </option>
+  </component>
+</project>

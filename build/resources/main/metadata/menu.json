@@ -1,0 +1,1204 @@
+[
+  {
+    "name": "Dashboard",
+    "code": "DASHBOARD",
+    "path": "/dashboard",
+    "icon": "DashboardIcon",
+    "description": "System Overview",
+    "permission": "PERM_DASHBOARD_READ",
+    "status": "ACTIVE",
+    "subMenus": [
+      {
+        "name": "Executive Dashboard",
+        "code": "EXECUTIVE_DASHBOARD",
+        "path": "/dashboard/executive",
+        "description": "Executive overview and KPIs",
+        "permission": "PERM_EXECUTIVE_DASHBOARD_READ",
+        "status": "ACTIVE"
+      },
+      {
+        "name": "Branch Dashboard",
+        "code": "BRANCH_DASHBOARD",
+        "path": "/dashboard/branch",
+        "description": "Branch-wise performance metrics",
+        "permission": "PERM_BRANCH_DASHBOARD_READ",
+        "status": "ACTIVE"
+      },
+      {
+        "name": "Agent Dashboard",
+        "code": "AGENT_DASHBOARD",
+        "path": "/dashboard/agent",
+        "description": "Agent performance and activity",
+        "permission": "PERM_AGENT_DASHBOARD_READ",
+        "status": "ACTIVE"
+      },
+      {
+        "name": "Underwriter Dashboard",
+        "code": "UNDERWRITER_DASHBOARD",
+        "path": "/dashboard/underwriter",
+        "description": "Underwriting activity and risk metrics",
+        "permission": "PERM_UNDERWRITER_DASHBOARD_READ",
+        "status": "ACTIVE"
+      },
+      {
+        "name": "Claims Dashboard",
+        "code": "CLAIMS_DASHBOARD",
+        "path": "/dashboard/claims",
+        "description": "Claims processing and trends",
+        "permission": "PERM_CLAIMS_DASHBOARD_READ",
+        "status": "ACTIVE"
+      },
+      {
+        "name": "Finance Dashboard",
+        "code": "FINANCE_DASHBOARD",
+        "path": "/dashboard/finance",
+        "description": "Financial metrics and reconciliations",
+        "permission": "PERM_FINANCE_DASHBOARD_READ",
+        "status": "ACTIVE"
+      },
+      {
+        "name": "Sales Dashboard",
+        "code": "SALES_DASHBOARD",
+        "path": "/dashboard/sales",
+        "description": "Sales pipeline and revenue tracking",
+        "permission": "PERM_SALES_DASHBOARD_READ",
+        "status": "ACTIVE"
+      },
+      {
+        "name": "Customer Dashboard",
+        "code": "CUSTOMER_DASHBOARD_SECTION",
+        "path": "/dashboard/customer",
+        "description": "Customer insights and segmentation",
+        "permission": "PERM_CUSTOMER_DASHBOARD_READ",
+        "status": "ACTIVE"
+      },
+      {
+        "name": "KPI & Analytics",
+        "code": "KPI_ANALYTICS",
+        "path": "/dashboard/kpi",
+        "description": "Key performance indicators and analytics",
+        "permission": "PERM_KPI_ANALYTICS_READ",
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  {
+    "name": "User Management",
+    "code": "USER_MANAGEMENT",
+    "path": "/user-management",
+    "icon": "UserIcon",
+    "description": "Manage users, roles and permissions",
+    "permission": "PERM_USER_MANAGEMENT_ADMIN",
+    "status": "ACTIVE",
+    "subMenus": [
+      {
+        "name": "Users",
+        "code": "USERS",
+        "path": "/user-management/users",
+        "description": "User list and registration",
+        "permission": "PERM_USERS_READ",
+        "status": "ACTIVE"
+      },
+      {
+        "name": "Roles",
+        "code": "ROLES",
+        "path": "/user-management/roles",
+        "description": "Role management",
+        "permission": "PERM_ROLES_READ",
+        "status": "ACTIVE"
+      },
+      {
+        "name": "Groups",
+        "code": "USER_GROUPS",
+        "path": "/user-management/groups",
+        "description": "User group management",
+        "permission": "PERM_USER_GROUPS_READ",
+        "status": "ACTIVE"
+      },
+      {
+        "name": "Password Policy",
+        "code": "PASSWORD_POLICY",
+        "path": "/user-management/password-policy",
+        "description": "Configure password security rules",
+        "permission": "PERM_PASSWORD_POLICY_READ",
+        "status": "ACTIVE"
+      },
+      {
+        "name": "Authentication Settings",
+        "code": "AUTH_SETTINGS",
+        "path": "/user-management/auth-settings",
+        "description": "Authentication configuration",
+        "permission": "PERM_AUTH_SETTINGS_READ",
+        "status": "ACTIVE"
+      },
+      {
+        "name": "Multi-Factor Authentication",
+        "code": "MFA_SETTINGS",
+        "path": "/user-management/mfa",
+        "description": "Manage MFA settings",
+        "permission": "PERM_MFA_SETTINGS_READ",
+        "status": "ACTIVE"
+      },
+      {
+        "name": "Audit Logs",
+        "code": "AUDIT_LOGS",
+        "path": "/user-management/audit-logs",
+        "description": "View system audit logs",
+        "permission": "PERM_AUDIT_LOGS_READ",
+        "status": "ACTIVE"
+      },
+      {
+        "name": "Session Monitoring",
+        "code": "SESSION_MONITORING",
+        "path": "/user-management/sessions",
+        "description": "Monitor active user sessions",
+        "permission": "PERM_SESSION_MONITORING_READ",
+        "status": "ACTIVE"
+      },
+      {
+        "name": "API Clients",
+        "code": "API_CLIENTS",
+        "path": "/user-management/api-clients",
+        "description": "Manage API access clients",
+        "permission": "PERM_API_CLIENTS_READ",
+        "status": "ACTIVE"
+      },
+      {
+        "name": "Access Logs",
+        "code": "ACCESS_LOGS",
+        "path": "/user-management/access-logs",
+        "description": "View access and login logs",
+        "permission": "PERM_ACCESS_LOGS_READ",
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  {
+    "name": "System Config",
+    "code": "SYSTEM_CONFIG",
+    "path": "/config",
+    "icon": "SettingsIcon",
+    "description": "System configuration and setup",
+    "permission": "PERM_SYSTEM_CONFIG_READ",
+    "status": "ACTIVE",
+    "subMenus": [
+      {
+        "name": "Company Profile",
+        "code": "COMPANY_PROFILE",
+        "path": "config/company",
+        "description": "Manage company details",
+        "permission": "PERM_COMPANY_PROFILE_READ",
+        "status": "ACTIVE"
+      },
+      {
+        "name": "Branches",
+        "code": "BRANCHES",
+        "path": "config/branches",
+        "description": "Manage branch offices",
+        "permission": "PERM_BRANCHES_READ",
+        "status": "ACTIVE"
+      },
+      {
+        "name": "Master Data",
+        "code": "MASTER_DATA",
+        "path": "/config/master",
+        "description": "Countries, Provinces, Regions",
+        "permission": "PERM_MASTER_DATA_READ",
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  {
+    "name": "Customer Management",
+    "code": "CUSTOMER_MANAGEMENT",
+    "path": "/customer-management",
+    "icon": "GroupsIcon",
+    "description": "Manage individual and corporate customers",
+    "permission": "PERM_CUSTOMER_MANAGEMENT_READ",
+    "status": "ACTIVE",
+    "subMenus": [
+      {
+        "name": "Individual Customers",
+        "code": "INDIVIDUAL_CUSTOMERS",
+        "path": "/customer-management/individual",
+        "description": "Manage individual policy holders",
+        "permission": "PERM_INDIVIDUAL_CUSTOMERS_READ",
+        "status": "ACTIVE"
+      },
+      {
+        "name": "Corporate Customers",
+        "code": "CORPORATE_CUSTOMERS",
+        "path": "/customer-management/corporate",
+        "description": "Manage corporate clients",
+        "permission": "PERM_CORPORATE_CUSTOMERS_READ",
+        "status": "ACTIVE"
+      },
+      {
+        "name": "Customer Onboarding",
+        "code": "CUSTOMER_ONBOARDING",
+        "path": "/customer-management/onboarding",
+        "description": "Customer onboarding workflow",
+        "permission": "PERM_CUSTOMER_ONBOARDING_READ",
+        "status": "ACTIVE"
+      },
+      {
+        "name": "KYC Verification",
+        "code": "KYC_VERIFICATION",
+        "path": "/customer-management/kyc",
+        "description": "Know Your Customer verification",
+        "permission": "PERM_KYC_VERIFICATION_READ",
+        "status": "ACTIVE"
+      },
+      {
+        "name": "Identity Documents",
+        "code": "IDENTITY_DOCUMENTS",
+        "path": "/customer-management/identity-docs",
+        "description": "Manage customer identity documents",
+        "permission": "PERM_IDENTITY_DOCUMENTS_READ",
+        "status": "ACTIVE"
+      },
+      {
+        "name": "Beneficiaries",
+        "code": "BENEFICIARIES",
+        "path": "/customer-management/beneficiaries",
+        "description": "Manage customer beneficiaries",
+        "permission": "PERM_BENEFICIARIES_READ",
+        "status": "ACTIVE"
+      },
+      {
+        "name": "Nominees",
+        "code": "NOMINEES",
+        "path": "/customer-management/nominees",
+        "description": "Manage customer nominees",
+        "permission": "PERM_NOMINEES_READ",
+        "status": "ACTIVE"
+      },
+      {
+        "name": "Family Members",
+        "code": "FAMILY_MEMBERS",
+        "path": "/customer-management/family",
+        "description": "Manage family member details",
+        "permission": "PERM_FAMILY_MEMBERS_READ",
+        "status": "ACTIVE"
+      },
+      {
+        "name": "Customer Risk Profile",
+        "code": "CUSTOMER_RISK_PROFILE",
+        "path": "/customer-management/risk-profile",
+        "description": "Analyze customer risk profiles",
+        "permission": "PERM_CUSTOMER_RISK_PROFILE_READ",
+        "status": "ACTIVE"
+      },
+      {
+        "name": "Customer Search",
+        "code": "CUSTOMER_SEARCH",
+        "path": "/customer-management/search",
+        "description": "Advanced customer search",
+        "permission": "PERM_CUSTOMER_SEARCH_READ",
+        "status": "ACTIVE"
+      },
+      {
+        "name": "Blacklist",
+        "code": "CUSTOMER_BLACKLIST",
+        "path": "/customer-management/blacklist",
+        "description": "Manage blacklisted customers",
+        "permission": "PERM_CUSTOMER_BLACKLIST_READ",
+        "status": "ACTIVE"
+      },
+      {
+        "name": "Customer Documents",
+        "code": "CUSTOMER_DOCUMENTS",
+        "path": "/customer-management/documents",
+        "description": "Customer document repository",
+        "permission": "PERM_CUSTOMER_DOCUMENTS_READ",
+        "status": "ACTIVE"
+      },
+      {
+        "name": "Customer Notes",
+        "code": "CUSTOMER_NOTES",
+        "path": "/customer-management/notes",
+        "description": "Customer interaction notes",
+        "permission": "PERM_CUSTOMER_NOTES_READ",
+        "status": "ACTIVE"
+      },
+      {
+        "name": "Customer Timeline",
+        "code": "CUSTOMER_TIMELINE",
+        "path": "/customer-management/timeline",
+        "description": "Customer history timeline",
+        "permission": "PERM_CUSTOMER_TIMELINE_READ",
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  {
+    "name": "Agent & Broker Management",
+    "code": "AGENT_BROKER_MANAGEMENT",
+    "path": "/agent-broker",
+    "icon": "SupportAgentIcon",
+    "description": "Manage agents, brokers and commissions",
+    "permission": "PERM_AGENT_BROKER_READ",
+    "status": "ACTIVE",
+    "subMenus": [
+      {
+        "name": "Agent Registration",
+        "code": "AGENT_REGISTRATION",
+        "path": "/agent-broker/agent-reg",
+        "description": "Register new agents",
+        "permission": "PERM_AGENT_REGISTRATION_READ",
+        "status": "ACTIVE"
+      },
+      {
+        "name": "Broker Registration",
+        "code": "BROKER_REGISTRATION",
+        "path": "/agent-broker/broker-reg",
+        "description": "Register new brokers",
+        "permission": "PERM_BROKER_REGISTRATION_READ",
+        "status": "ACTIVE"
+      },
+      {
+        "name": "Agent License",
+        "code": "AGENT_LICENSE",
+        "path": "/agent-broker/agent-license",
+        "description": "Manage agent licenses",
+        "permission": "PERM_AGENT_LICENSE_READ",
+        "status": "ACTIVE"
+      },
+      {
+        "name": "Broker License",
+        "code": "BROKER_LICENSE",
+        "path": "/agent-broker/broker-license",
+        "description": "Manage broker licenses",
+        "permission": "PERM_BROKER_LICENSE_READ",
+        "status": "ACTIVE"
+      },
+      {
+        "name": "Commission Setup",
+        "code": "COMMISSION_SETUP",
+        "path": "/agent-broker/comm-setup",
+        "description": "Configure commission structures",
+        "permission": "PERM_COMMISSION_SETUP_READ",
+        "status": "ACTIVE"
+      },
+      {
+        "name": "Commission Rules",
+        "code": "COMMISSION_RULES",
+        "path": "/agent-broker/comm-rules",
+        "description": "Define commission calculation rules",
+        "permission": "PERM_COMMISSION_RULES_READ",
+        "status": "ACTIVE"
+      },
+      {
+        "name": "Sales Performance",
+        "code": "SALES_PERFORMANCE",
+        "path": "/agent-broker/sales-perf",
+        "description": "Track sales performance",
+        "permission": "PERM_SALES_PERFORMANCE_READ",
+        "status": "ACTIVE"
+      },
+      {
+        "name": "Agent Targets",
+        "code": "AGENT_TARGETS",
+        "path": "/agent-broker/agent-targets",
+        "description": "Set and monitor agent targets",
+        "permission": "PERM_AGENT_TARGETS_READ",
+        "status": "ACTIVE"
+      },
+      {
+        "name": "Agent Wallet",
+        "code": "AGENT_WALLET",
+        "path": "/agent-broker/agent-wallet",
+        "description": "Manage agent wallets and earnings",
+        "permission": "PERM_AGENT_WALLET_READ",
+        "status": "ACTIVE"
+      },
+      {
+        "name": "Agent Settlements",
+        "code": "AGENT_SETTLEMENTS",
+        "path": "/agent-broker/agent-settlements",
+        "description": "Process agent payments and settlements",
+        "permission": "PERM_AGENT_SETTLEMENTS_READ",
+        "status": "ACTIVE"
+      },
+      {
+        "name": "Branch Assignment",
+        "code": "AGENT_BRANCH_ASSIGNMENT",
+        "path": "/agent-broker/branch-assign",
+        "description": "Assign agents to branches",
+        "permission": "PERM_AGENT_BRANCH_ASSIGNMENT_READ",
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  {
+    "name": "Product Management",
+    "code": "PRODUCT_MANAGEMENT",
+    "path": "/product-management",
+    "icon": "InventoryIcon",
+    "description": "Manage insurance products and rules",
+    "permission": "PERM_PRODUCT_MANAGEMENT_READ",
+    "status": "ACTIVE",
+    "subMenus": [
+      {
+        "name": "Insurance Products",
+        "code": "INSURANCE_PRODUCTS",
+        "path": "/product-management/products",
+        "description": "Define insurance products",
+        "permission": "PERM_INSURANCE_PRODUCTS_READ",
+        "status": "ACTIVE"
+      },
+      {
+        "name": "Product Categories",
+        "code": "PRODUCT_CATEGORIES",
+        "path": "/product-management/categories",
+        "description": "Categorize insurance products",
+        "permission": "PERM_PRODUCT_CATEGORIES_READ",
+        "status": "ACTIVE"
+      },
+      {
+        "name": "Product Features",
+        "code": "PRODUCT_FEATURES",
+        "path": "/product-management/features",
+        "description": "Define product features",
+        "permission": "PERM_PRODUCT_FEATURES_READ",
+        "status": "ACTIVE"
+      },
+      {
+        "name": "Product Benefits",
+        "code": "PRODUCT_BENEFITS",
+        "path": "/product-management/benefits",
+        "description": "Define product benefits",
+        "permission": "PERM_PRODUCT_BENEFITS_READ",
+        "status": "ACTIVE"
+      },
+      {
+        "name": "Riders",
+        "code": "PRODUCT_RIDERS",
+        "path": "/product-management/riders",
+        "description": "Manage additional riders",
+        "permission": "PERM_PRODUCT_RIDERS_READ",
+        "status": "ACTIVE"
+      },
+      {
+        "name": "Coverage Setup",
+        "code": "COVERAGE_SETUP",
+        "path": "/product-management/coverage",
+        "description": "Define coverage parameters",
+        "permission": "PERM_COVERAGE_SETUP_READ",
+        "status": "ACTIVE"
+      },
+      {
+        "name": "Exclusions",
+        "code": "PRODUCT_EXCLUSIONS",
+        "path": "/product-management/exclusions",
+        "description": "Manage product exclusions",
+        "permission": "PERM_PRODUCT_EXCLUSIONS_READ",
+        "status": "ACTIVE"
+      },
+      {
+        "name": "Premium Calculation Rules",
+        "code": "PREMIUM_CALC_RULES",
+        "path": "/product-management/prem-rules",
+        "description": "Define premium calculation logic",
+        "permission": "PERM_PREMIUM_CALC_RULES_READ",
+        "status": "ACTIVE"
+      },
+      {
+        "name": "Product Documents",
+        "code": "PRODUCT_DOCUMENTS",
+        "path": "/product-management/documents",
+        "description": "Product collateral and documents",
+        "permission": "PERM_PRODUCT_DOCUMENTS_READ",
+        "status": "ACTIVE"
+      },
+      {
+        "name": "Product Versions",
+        "code": "PRODUCT_VERSIONS",
+        "path": "/product-management/versions",
+        "description": "Manage product versioning",
+        "permission": "PERM_PRODUCT_VERSIONS_READ",
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  {
+    "name": "Policy Management",
+    "code": "POLICY_MANAGEMENT",
+    "path": "/policy-management",
+    "icon": "DescriptionIcon",
+    "description": "Life cycle management of insurance policies",
+    "permission": "PERM_POLICY_MANAGEMENT_READ",
+    "status": "ACTIVE",
+    "subMenus": [
+      {
+        "name": "New Policy",
+        "code": "NEW_POLICY",
+        "path": "/policy-management/new",
+        "description": "Issue new policy",
+        "permission": "PERM_NEW_POLICY_READ",
+        "status": "ACTIVE"
+      },
+      {
+        "name": "Policy Renewal",
+        "code": "POLICY_RENEWAL",
+        "path": "/policy-management/renewal",
+        "description": "Renew existing policy",
+        "permission": "PERM_POLICY_RENEWAL_READ",
+        "status": "ACTIVE"
+      },
+      {
+        "name": "Policy Cancellation",
+        "code": "POLICY_CANCELLATION",
+        "path": "/policy-management/cancel",
+        "description": "Cancel insurance policy",
+        "permission": "PERM_POLICY_CANCELLATION_READ",
+        "status": "ACTIVE"
+      },
+      {
+        "name": "Policy Endorsement",
+        "code": "POLICY_ENDORSEMENT",
+        "path": "/policy-management/endorsement",
+        "description": "Policy endorsements/alterations",
+        "permission": "PERM_POLICY_ENDORSEMENT_READ",
+        "status": "ACTIVE"
+      },
+      {
+        "name": "Policy Reinstatement",
+        "code": "POLICY_REINSTATEMENT",
+        "path": "/policy-management/reinstate",
+        "description": "Reinstate lapsed policy",
+        "permission": "PERM_POLICY_REINSTATEMENT_READ",
+        "status": "ACTIVE"
+      },
+      {
+        "name": "Policy Suspension",
+        "code": "POLICY_SUSPENSION",
+        "path": "/policy-management/suspend",
+        "description": "Suspend active policy",
+        "permission": "PERM_POLICY_SUSPENSION_READ",
+        "status": "ACTIVE"
+      },
+      {
+        "name": "Policy Upgrade",
+        "code": "POLICY_UPGRADE",
+        "path": "/policy-management/upgrade",
+        "description": "Upgrade policy coverage",
+        "permission": "PERM_POLICY_UPGRADE_READ",
+        "status": "ACTIVE"
+      },
+      {
+        "name": "Policy Downgrade",
+        "code": "POLICY_DOWNGRADE",
+        "path": "/policy-management/downgrade",
+        "description": "Reduce policy coverage",
+        "permission": "PERM_POLICY_DOWNGRADE_READ",
+        "status": "ACTIVE"
+      },
+      {
+        "name": "Policy Transfer",
+        "code": "POLICY_TRANSFER",
+        "path": "/policy-management/transfer",
+        "description": "Transfer policy ownership",
+        "permission": "PERM_POLICY_TRANSFER_READ",
+        "status": "ACTIVE"
+      },
+      {
+        "name": "Policy Search",
+        "code": "POLICY_SEARCH",
+        "path": "/policy-management/search",
+        "description": "Search and view policies",
+        "permission": "PERM_POLICY_SEARCH_READ",
+        "status": "ACTIVE"
+      },
+      {
+        "name": "Policy Documents",
+        "code": "POLICY_DOCUMENTS",
+        "path": "/policy-management/documents",
+        "description": "Manage policy related documents",
+        "permission": "PERM_POLICY_DOCUMENTS_READ",
+        "status": "ACTIVE"
+      },
+      {
+        "name": "Policy History",
+        "code": "POLICY_HISTORY",
+        "path": "/policy-management/history",
+        "description": "View policy audit history",
+        "permission": "PERM_POLICY_HISTORY_READ",
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  {
+    "name": "Underwriting",
+    "code": "UNDERWRITING",
+    "path": "/underwriting",
+    "icon": "FactCheckIcon",
+    "description": "Risk assessment and underwriting workflow",
+    "permission": "PERM_UNDERWRITING_READ",
+    "status": "ACTIVE",
+    "subMenus": [
+      {
+        "name": "Underwriting Queue",
+        "code": "UNDERWRITING_QUEUE",
+        "path": "/underwriting/queue",
+        "description": "View pending applications",
+        "permission": "PERM_UNDERWRITING_QUEUE_READ",
+        "status": "ACTIVE"
+      },
+      {
+        "name": "Risk Assessment",
+        "code": "RISK_ASSESSMENT",
+        "path": "/underwriting/risk-assessment",
+        "description": "Perform risk assessment",
+        "permission": "PERM_RISK_ASSESSMENT_READ",
+        "status": "ACTIVE"
+      },
+      {
+        "name": "Medical Assessment",
+        "code": "MEDICAL_ASSESSMENT",
+        "path": "/underwriting/medical",
+        "description": "Review medical reports",
+        "permission": "PERM_MEDICAL_ASSESSMENT_READ",
+        "status": "ACTIVE"
+      },
+      {
+        "name": "Vehicle Inspection",
+        "code": "VEHICLE_INSPECTION",
+        "path": "/underwriting/vehicle-insp",
+        "description": "Vehicle inspection reports",
+        "permission": "PERM_VEHICLE_INSPECTION_READ",
+        "status": "ACTIVE"
+      },
+      {
+        "name": "Property Inspection",
+        "code": "PROPERTY_INSPECTION",
+        "path": "/underwriting/property-insp",
+        "description": "Property inspection reports",
+        "permission": "PERM_PROPERTY_INSPECTION_READ",
+        "status": "ACTIVE"
+      },
+      {
+        "name": "Survey Reports",
+        "code": "SURVEY_REPORTS",
+        "path": "/underwriting/surveys",
+        "description": "Review survey reports",
+        "permission": "PERM_SURVEY_REPORTS_READ",
+        "status": "ACTIVE"
+      },
+      {
+        "name": "Risk Score",
+        "code": "RISK_SCORE",
+        "path": "/underwriting/risk-score",
+        "description": "Analyze risk scores",
+        "permission": "PERM_RISK_SCORE_READ",
+        "status": "ACTIVE"
+      },
+      {
+        "name": "Underwriter Decision",
+        "code": "UNDERWRITER_DECISION",
+        "path": "/underwriting/decision",
+        "description": "Final underwriter decision",
+        "permission": "PERM_UNDERWRITER_DECISION_READ",
+        "status": "ACTIVE"
+      },
+      {
+        "name": "Approval Workflow",
+        "code": "UNDERWRITING_APPROVAL",
+        "path": "/underwriting/approval",
+        "description": "Multi-level approval workflow",
+        "permission": "PERM_UNDERWRITING_APPROVAL_READ",
+        "status": "ACTIVE"
+      },
+      {
+        "name": "Reinsurance Review",
+        "code": "REINSURANCE_REVIEW",
+        "path": "/underwriting/re-review",
+        "description": "Review for reinsurance requirements",
+        "permission": "PERM_REINSURANCE_REVIEW_READ",
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  {
+    "name": "Premium Management",
+    "code": "PREMIUM_MANAGEMENT",
+    "path": "/premium-management",
+    "icon": "PaymentsIcon",
+    "description": "Manage policy premiums and collections",
+    "permission": "PERM_PREMIUM_MANAGEMENT_READ",
+    "status": "ACTIVE",
+    "subMenus": [
+      {
+        "name": "Premium Calculation",
+        "code": "PREMIUM_CALCULATION",
+        "path": "/premium-management/calc",
+        "description": "Calculate policy premiums",
+        "permission": "PERM_PREMIUM_CALCULATION_READ",
+        "status": "ACTIVE"
+      },
+      {
+        "name": "Premium Schedule",
+        "code": "PREMIUM_SCHEDULE",
+        "path": "/premium-management/schedule",
+        "description": "View payment schedules",
+        "permission": "PERM_PREMIUM_SCHEDULE_READ",
+        "status": "ACTIVE"
+      },
+      {
+        "name": "Installments",
+        "code": "PREMIUM_INSTALLMENTS",
+        "path": "/premium-management/installments",
+        "description": "Manage premium installments",
+        "permission": "PERM_PREMIUM_INSTALLMENTS_READ",
+        "status": "ACTIVE"
+      },
+      {
+        "name": "Premium Collection",
+        "code": "PREMIUM_COLLECTION",
+        "path": "/premium-management/collect",
+        "description": "Collect premium payments",
+        "permission": "PERM_PREMIUM_COLLECTION_READ",
+        "status": "ACTIVE"
+      },
+      {
+        "name": "Outstanding Premium",
+        "code": "OUTSTANDING_PREMIUM",
+        "path": "/premium-management/outstanding",
+        "description": "Monitor pending payments",
+        "permission": "PERM_OUTSTANDING_PREMIUM_READ",
+        "status": "ACTIVE"
+      },
+      {
+        "name": "Premium Refund",
+        "code": "PREMIUM_REFUND",
+        "path": "/premium-management/refund",
+        "description": "Process premium refunds",
+        "permission": "PERM_PREMIUM_REFUND_READ",
+        "status": "ACTIVE"
+      },
+      {
+        "name": "Premium Waiver",
+        "code": "PREMIUM_WAIVER",
+        "path": "/premium-management/waiver",
+        "description": "Apply premium waivers",
+        "permission": "PERM_PREMIUM_WAIVER_READ",
+        "status": "ACTIVE"
+      },
+      {
+        "name": "Premium Adjustment",
+        "code": "PREMIUM_ADJUSTMENT",
+        "path": "/premium-management/adjust",
+        "description": "Adjust policy premiums",
+        "permission": "PERM_PREMIUM_ADJUSTMENT_READ",
+        "status": "ACTIVE"
+      },
+      {
+        "name": "Premium History",
+        "code": "PREMIUM_HISTORY",
+        "path": "/premium-management/history",
+        "description": "View premium payment history",
+        "permission": "PERM_PREMIUM_HISTORY_READ",
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  {
+    "name": "Claims Management",
+    "code": "CLAIMS_MANAGEMENT",
+    "path": "/claims-management",
+    "icon": "MedicalInformationIcon",
+    "description": "Process and manage insurance claims",
+    "permission": "PERM_CLAIMS_MANAGEMENT_READ",
+    "status": "ACTIVE",
+    "subMenus": [
+      {
+        "name": "Register Claim",
+        "code": "REGISTER_CLAIM",
+        "path": "/claims-management/register",
+        "description": "Intimate new claim",
+        "permission": "PERM_REGISTER_CLAIM_READ",
+        "status": "ACTIVE"
+      },
+      {
+        "name": "Claim Verification",
+        "code": "CLAIM_VERIFICATION",
+        "path": "/claims-management/verify",
+        "description": "Verify claim details",
+        "permission": "PERM_CLAIM_VERIFICATION_READ",
+        "status": "ACTIVE"
+      },
+      {
+        "name": "Document Verification",
+        "code": "CLAIM_DOC_VERIFY",
+        "path": "/claims-management/doc-verify",
+        "description": "Verify submitted claim documents",
+        "permission": "PERM_CLAIM_DOC_VERIFY_READ",
+        "status": "ACTIVE"
+      },
+      {
+        "name": "Investigation",
+        "code": "CLAIM_INVESTIGATION",
+        "path": "/claims-management/investigate",
+        "description": "Investigate claim legitimacy",
+        "permission": "PERM_CLAIM_INVESTIGATION_READ",
+        "status": "ACTIVE"
+      },
+      {
+        "name": "Survey Assignment",
+        "code": "SURVEY_ASSIGNMENT",
+        "path": "/claims-management/survey-assign",
+        "description": "Assign surveyors to claims",
+        "permission": "PERM_SURVEY_ASSIGNMENT_READ",
+        "status": "ACTIVE"
+      },
+      {
+        "name": "Medical Review",
+        "code": "CLAIM_MEDICAL_REVIEW",
+        "path": "/claims-management/medical-review",
+        "description": "Review medical claims",
+        "permission": "PERM_CLAIM_MEDICAL_REVIEW_READ",
+        "status": "ACTIVE"
+      },
+      {
+        "name": "Claim Approval",
+        "code": "CLAIM_APPROVAL",
+        "path": "/claims-management/approval",
+        "description": "Approve or recommend claims",
+        "permission": "PERM_CLAIM_APPROVAL_READ",
+        "status": "ACTIVE"
+      },
+      {
+        "name": "Claim Rejection",
+        "code": "CLAIM_REJECTION",
+        "path": "/claims-management/reject",
+        "description": "Reject non-eligible claims",
+        "permission": "PERM_CLAIM_REJECTION_READ",
+        "status": "ACTIVE"
+      },
+      {
+        "name": "Claim Settlement",
+        "code": "CLAIM_SETTLEMENT",
+        "path": "/claims-management/settle",
+        "description": "Finalize claim settlement amount",
+        "permission": "PERM_CLAIM_SETTLEMENT_READ",
+        "status": "ACTIVE"
+      },
+      {
+        "name": "Claim Payment",
+        "code": "CLAIM_PAYMENT",
+        "path": "/claims-management/payment",
+        "description": "Process claim payments",
+        "permission": "PERM_CLAIM_PAYMENT_READ",
+        "status": "ACTIVE"
+      },
+      {
+        "name": "Claim Recovery",
+        "code": "CLAIM_RECOVERY",
+        "path": "/claims-management/recovery",
+        "description": "Manage claim recoveries",
+        "permission": "PERM_CLAIM_RECOVERY_READ",
+        "status": "ACTIVE"
+      },
+      {
+        "name": "Salvage",
+        "code": "CLAIM_SALVAGE",
+        "path": "/claims-management/salvage",
+        "description": "Manage salvage items",
+        "permission": "PERM_CLAIM_SALVAGE_READ",
+        "status": "ACTIVE"
+      },
+      {
+        "name": "Fraud Investigation",
+        "code": "FRAUD_INVESTIGATION",
+        "path": "/claims-management/fraud",
+        "description": "Specialized fraud investigation",
+        "permission": "PERM_FRAUD_INVESTIGATION_READ",
+        "status": "ACTIVE"
+      },
+      {
+        "name": "Claim History",
+        "code": "CLAIM_HISTORY",
+        "path": "/claims-management/history",
+        "description": "View claim lifecycle history",
+        "permission": "PERM_CLAIM_HISTORY_READ",
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  {
+    "name": "Billing & Payments",
+    "code": "BILLING_PAYMENTS",
+    "path": "/billing",
+    "icon": "ReceiptLongIcon",
+    "description": "Invoicing, receipts and payments",
+    "permission": "PERM_BILLING_PAYMENTS_READ",
+    "status": "ACTIVE",
+    "subMenus": [
+      {
+        "name": "Invoice",
+        "code": "INVOICES",
+        "path": "/billing/invoices",
+        "description": "Manage invoices",
+        "permission": "PERM_INVOICES_READ",
+        "status": "ACTIVE"
+      },
+      {
+        "name": "Receipts",
+        "code": "RECEIPTS",
+        "path": "/billing/receipts",
+        "description": "Generate and view receipts",
+        "permission": "PERM_RECEIPTS_READ",
+        "status": "ACTIVE"
+      },
+      {
+        "name": "Payment Collection",
+        "code": "PAYMENT_COLLECTION",
+        "path": "/billing/collect",
+        "description": "Record payment collections",
+        "permission": "PERM_PAYMENT_COLLECTION_READ",
+        "status": "ACTIVE"
+      },
+      {
+        "name": "Refund",
+        "code": "BILLING_REFUND",
+        "path": "/billing/refund",
+        "description": "Process billing refunds",
+        "permission": "PERM_BILLING_REFUND_READ",
+        "status": "ACTIVE"
+      },
+      {
+        "name": "Online Payments",
+        "code": "ONLINE_PAYMENTS",
+        "path": "/billing/online",
+        "description": "Monitor online payment transactions",
+        "permission": "PERM_ONLINE_PAYMENTS_READ",
+        "status": "ACTIVE"
+      },
+      {
+        "name": "Payment Gateway",
+        "code": "PAYMENT_GATEWAY",
+        "path": "/billing/gateway",
+        "description": "Configure payment gateways",
+        "permission": "PERM_PAYMENT_GATEWAY_READ",
+        "status": "ACTIVE"
+      },
+      {
+        "name": "Bank Accounts",
+        "code": "BANK_ACCOUNTS",
+        "path": "/billing/bank-accounts",
+        "description": "Manage company bank accounts",
+        "permission": "PERM_BANK_ACCOUNTS_READ",
+        "status": "ACTIVE"
+      },
+      {
+        "name": "Payment Reconciliation",
+        "code": "PAYMENT_RECONCILIATION",
+        "path": "/billing/reconcile",
+        "description": "Reconcile payments with bank statements",
+        "permission": "PERM_PAYMENT_RECONCILIATION_READ",
+        "status": "ACTIVE"
+      },
+      {
+        "name": "Payment History",
+        "code": "PAYMENT_HISTORY",
+        "path": "/billing/history",
+        "description": "View payment transaction history",
+        "permission": "PERM_PAYMENT_HISTORY_READ",
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  {
+    "name": "Accounting",
+    "code": "ACCOUNTING",
+    "path": "/accounting",
+    "icon": "AccountBalanceIcon",
+    "description": "General ledger and financial reporting",
+    "permission": "PERM_ACCOUNTING_READ",
+    "status": "ACTIVE",
+    "subMenus": [
+      {
+        "name": "Chart of Accounts",
+        "code": "CHART_OF_ACCOUNTS",
+        "path": "/accounting/coa",
+        "description": "Manage chart of accounts",
+        "permission": "PERM_CHART_OF_ACCOUNTS_READ",
+        "status": "ACTIVE"
+      },
+      {
+        "name": "Journal Entries",
+        "code": "JOURNAL_ENTRIES",
+        "path": "/accounting/journal",
+        "description": "Post journal entries",
+        "permission": "PERM_JOURNAL_ENTRIES_READ",
+        "status": "ACTIVE"
+      },
+      {
+        "name": "General Ledger",
+        "code": "GENERAL_LEDGER",
+        "path": "/accounting/gl",
+        "description": "View general ledger",
+        "permission": "PERM_GENERAL_LEDGER_READ",
+        "status": "ACTIVE"
+      },
+      {
+        "name": "Trial Balance",
+        "code": "TRIAL_BALANCE",
+        "path": "/accounting/trial-balance",
+        "description": "Generate trial balance",
+        "permission": "PERM_TRIAL_BALANCE_READ",
+        "status": "ACTIVE"
+      },
+      {
+        "name": "Balance Sheet",
+        "code": "BALANCE_SHEET",
+        "path": "/accounting/balance-sheet",
+        "description": "Generate balance sheet",
+        "permission": "PERM_BALANCE_SHEET_READ",
+        "status": "ACTIVE"
+      },
+      {
+        "name": "Profit & Loss",
+        "code": "PROFIT_LOSS",
+        "path": "/accounting/pl",
+        "description": "Generate P&L statement",
+        "permission": "PERM_PROFIT_LOSS_READ",
+        "status": "ACTIVE"
+      },
+      {
+        "name": "Cash Book",
+        "code": "CASH_BOOK",
+        "path": "/accounting/cash-book",
+        "description": "Manage cash book",
+        "permission": "PERM_CASH_BOOK_READ",
+        "status": "ACTIVE"
+      },
+      {
+        "name": "Bank Reconciliation",
+        "code": "BANK_RECONCILIATION",
+        "path": "/accounting/bank-recon",
+        "description": "Perform bank reconciliation",
+        "permission": "PERM_BANK_RECONCILIATION_READ",
+        "status": "ACTIVE"
+      },
+      {
+        "name": "Accounts Payable",
+        "code": "ACCOUNTS_PAYABLE",
+        "path": "/accounting/ap",
+        "description": "Manage accounts payable",
+        "permission": "PERM_ACCOUNTS_PAYABLE_READ",
+        "status": "ACTIVE"
+      },
+      {
+        "name": "Accounts Receivable",
+        "code": "ACCOUNTS_RECEIVABLE",
+        "path": "/accounting/ar",
+        "description": "Manage accounts receivable",
+        "permission": "PERM_ACCOUNTS_RECEIVABLE_READ",
+        "status": "ACTIVE"
+      },
+      {
+        "name": "Tax Management",
+        "code": "TAX_MANAGEMENT",
+        "path": "/accounting/tax",
+        "description": "Configure and manage taxes",
+        "permission": "PERM_TAX_MANAGEMENT_READ",
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  {
+    "name": "Reinsurance",
+    "code": "REINSURANCE",
+    "path": "/reinsurance",
+    "icon": "AssuredWorkloadIcon",
+    "description": "Manage reinsurance treaties and placements",
+    "permission": "PERM_REINSURANCE_READ",
+    "status": "ACTIVE",
+    "subMenus": [
+      {
+        "name": "Reinsurance Companies",
+        "code": "REINSURANCE_COMPANIES",
+        "path": "/reinsurance/companies",
+        "description": "Manage reinsurer profiles",
+        "permission": "PERM_REINSURANCE_COMPANIES_READ",
+        "status": "ACTIVE"
+      },
+      {
+        "name": "Treaty Management",
+        "code": "TREATY_MANAGEMENT",
+        "path": "/reinsurance/treaties",
+        "description": "Manage reinsurance treaties",
+        "permission": "PERM_TREATY_MANAGEMENT_READ",
+        "status": "ACTIVE"
+      },
+      {
+        "name": "Facultative Insurance",
+        "code": "FACULTATIVE_INSURANCE",
+        "path": "/reinsurance/facultative",
+        "description": "Manage facultative placements",
+        "permission": "PERM_FACULTATIVE_INSURANCE_READ",
+        "status": "ACTIVE"
+      },
+      {
+        "name": "Premium Sharing",
+        "code": "REINSURANCE_PREMIUM_SHARING",
+        "path": "/reinsurance/prem-share",
+        "description": "Calculate premium sharing",
+        "permission": "PERM_REINSURANCE_PREMIUM_SHARING_READ",
+        "status": "ACTIVE"
+      },
+      {
+        "name": "Claim Sharing",
+        "code": "REINSURANCE_CLAIM_SHARING",
+        "path": "/reinsurance/claim-share",
+        "description": "Calculate claim sharing",
+        "permission": "PERM_REINSURANCE_CLAIM_SHARING_READ",
+        "status": "ACTIVE"
+      },
+      {
+        "name": "Settlement",
+        "code": "REINSURANCE_SETTLEMENT",
+        "path": "/reinsurance/settlement",
+        "description": "Process reinsurance settlements",
+        "permission": "PERM_REINSURANCE_SETTLEMENT_READ",
+        "status": "ACTIVE"
+      },
+      {
+        "name": "Reinsurance Reports",
+        "code": "REINSURANCE_REPORTS",
+        "path": "/reinsurance/reports",
+        "description": "View reinsurance reports",
+        "permission": "PERM_REINSURANCE_REPORTS_READ",
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  {
+    "name": "Audit & Monitoring",
+    "code": "AUDIT_MONITORING",
+    "path": "/audit",
+    "icon": "SettingOutlined",
+    "description": "Audit logs and session monitoring",
+    "permission": "PERM_AUDIT_LOG_READ",
+    "status": "ACTIVE",
+    "subMenus": [
+      {
+        "name": "Audit Logs",
+        "code": "AUDIT_LOGS_MENU",
+        "path": "/user-management/audit-logs",
+        "description": "View system audit logs",
+        "permission": "PERM_AUDIT_LOG_READ",
+        "status": "ACTIVE"
+      },
+      {
+        "name": "Active Sessions",
+        "code": "ACTIVE_SESSIONS_MENU",
+        "path": "/user-management/sessions",
+        "description": "Monitor active user sessions",
+        "permission": "PERM_SESSION_READ",
+        "status": "ACTIVE"
+      }
+    ]
+  }
+]

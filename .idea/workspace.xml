@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BackgroundAgentGlobalSettings">
+    <option name="selectedModelId" value="auto" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="923ab0de-d993-4842-9e76-2786ed69d79a" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../smart-insurance-ui/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../smart-insurance-ui/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../smart-insurance-ui/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../smart-insurance-ui/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../smart-insurance-ui/src/api/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/../smart-insurance-ui/src/api/auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../smart-insurance-ui/src/api/services.js" beforeDir="false" afterPath="$PROJECT_DIR$/../smart-insurance-ui/src/api/services.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../smart-insurance-ui/src/components/DashboardComponents.js" beforeDir="false" afterPath="$PROJECT_DIR$/../smart-insurance-ui/src/components/DashboardComponents.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../smart-insurance-ui/src/components/layout/AppLayout.js" beforeDir="false" afterPath="$PROJECT_DIR$/../smart-insurance-ui/src/components/layout/AppLayout.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../smart-insurance-ui/src/context/AuthContext.js" beforeDir="false" afterPath="$PROJECT_DIR$/../smart-insurance-ui/src/context/AuthContext.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../smart-insurance-ui/src/pages/ChangePassword.js" beforeDir="false" afterPath="$PROJECT_DIR$/../smart-insurance-ui/src/pages/ChangePassword.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../smart-insurance-ui/src/pages/Dashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/../smart-insurance-ui/src/pages/Dashboard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../smart-insurance-ui/src/pages/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/../smart-insurance-ui/src/pages/Login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../smart-insurance-ui/src/pages/crm/BranchCreate.js" beforeDir="false" afterPath="$PROJECT_DIR$/../smart-insurance-ui/src/pages/crm/BranchCreate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../smart-insurance-ui/src/pages/crm/CompanyProfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/../smart-insurance-ui/src/pages/crm/CompanyProfile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../smart-insurance-ui/src/pages/crm/CreateCustomer.js" beforeDir="false" afterPath="$PROJECT_DIR$/../smart-insurance-ui/src/pages/crm/CreateCustomer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../smart-insurance-ui/src/pages/crm/CreateRole.js" beforeDir="false" afterPath="$PROJECT_DIR$/../smart-insurance-ui/src/pages/crm/CreateRole.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../smart-insurance-ui/src/pages/crm/CreateUser.js" beforeDir="false" afterPath="$PROJECT_DIR$/../smart-insurance-ui/src/pages/crm/CreateUser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../smart-insurance-ui/src/pages/crm/CreateUserGroup.js" beforeDir="false" afterPath="$PROJECT_DIR$/../smart-insurance-ui/src/pages/crm/CreateUserGroup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../smart-insurance-ui/src/pages/crm/CustomerKYC.js" beforeDir="false" afterPath="$PROJECT_DIR$/../smart-insurance-ui/src/pages/crm/CustomerKYC.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../smart-insurance-ui/src/pages/crm/Customers.js" beforeDir="false" afterPath="$PROJECT_DIR$/../smart-insurance-ui/src/pages/crm/Customers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../smart-insurance-ui/src/pages/crm/EditCustomer.js" beforeDir="false" afterPath="$PROJECT_DIR$/../smart-insurance-ui/src/pages/crm/EditCustomer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../smart-insurance-ui/src/pages/crm/EditRole.js" beforeDir="false" afterPath="$PROJECT_DIR$/../smart-insurance-ui/src/pages/crm/EditRole.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../smart-insurance-ui/src/pages/crm/EditUserGroup.js" beforeDir="false" afterPath="$PROJECT_DIR$/../smart-insurance-ui/src/pages/crm/EditUserGroup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../smart-insurance-ui/src/pages/crm/MasterData.js" beforeDir="false" afterPath="$PROJECT_DIR$/../smart-insurance-ui/src/pages/crm/MasterData.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../smart-insurance-ui/src/pages/crm/MfaPolicyPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/../smart-insurance-ui/src/pages/crm/MfaPolicyPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../smart-insurance-ui/src/pages/crm/PasswordPolicyPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/../smart-insurance-ui/src/pages/crm/PasswordPolicyPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../smart-insurance-ui/src/pages/crm/RiskProfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/../smart-insurance-ui/src/pages/crm/RiskProfile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../smart-insurance-ui/src/pages/crm/UserEdit.js" beforeDir="false" afterPath="$PROJECT_DIR$/../smart-insurance-ui/src/pages/crm/UserEdit.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../smart-insurance-ui/src/pages/crm/UserView.js" beforeDir="false" afterPath="$PROJECT_DIR$/../smart-insurance-ui/src/pages/crm/UserView.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../smart-insurance-ui/src/pages/crm/Users.js" beforeDir="false" afterPath="$PROJECT_DIR$/../smart-insurance-ui/src/pages/crm/Users.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../smart-insurance-ui/src/pages/crm/ViewCustomer.js" beforeDir="false" afterPath="$PROJECT_DIR$/../smart-insurance-ui/src/pages/crm/ViewCustomer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../smart-insurance-ui/src/pages/crm/ViewRole.js" beforeDir="false" afterPath="$PROJECT_DIR$/../smart-insurance-ui/src/pages/crm/ViewRole.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../smart-insurance-ui/src/pages/crm/ViewUserGroup.js" beforeDir="false" afterPath="$PROJECT_DIR$/../smart-insurance-ui/src/pages/crm/ViewUserGroup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../smart-insurance-ui/src/pages/dashboards/AgentDashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/../smart-insurance-ui/src/pages/dashboards/AgentDashboard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../smart-insurance-ui/src/pages/dashboards/BranchDashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/../smart-insurance-ui/src/pages/dashboards/BranchDashboard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../smart-insurance-ui/src/pages/dashboards/ClaimsDashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/../smart-insurance-ui/src/pages/dashboards/ClaimsDashboard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../smart-insurance-ui/src/pages/dashboards/CustomerDashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/../smart-insurance-ui/src/pages/dashboards/CustomerDashboard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../smart-insurance-ui/src/pages/dashboards/ExecutiveDashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/../smart-insurance-ui/src/pages/dashboards/ExecutiveDashboard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../smart-insurance-ui/src/pages/dashboards/FinanceDashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/../smart-insurance-ui/src/pages/dashboards/FinanceDashboard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../smart-insurance-ui/src/pages/dashboards/SalesDashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/../smart-insurance-ui/src/pages/dashboards/SalesDashboard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../smart-insurance-ui/src/pages/dashboards/UnderwriterDashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/../smart-insurance-ui/src/pages/dashboards/UnderwriterDashboard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../smart-insurance-ui/src/store/slices/authSlice.js" beforeDir="false" afterPath="$PROJECT_DIR$/../smart-insurance-ui/src/store/slices/authSlice.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../smart-insurance-ui/src/styles/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/../smart-insurance-ui/src/styles/global.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../smart-insurance-ui/src/styles/theme.js" beforeDir="false" afterPath="$PROJECT_DIR$/../smart-insurance-ui/src/styles/theme.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.agent/context.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/smartinsurance/applicationConfig/service/BulkUploadService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/smartinsurance/applicationConfig/service/BulkUploadService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/smartinsurance/commonService/model/Document.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/smartinsurance/commonService/model/Document.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/smartinsurance/customerService/dto/KYCDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/smartinsurance/customerService/dto/KYCDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/smartinsurance/customerService/mapper/CustomerMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/smartinsurance/customerService/mapper/CustomerMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/smartinsurance/customerService/model/KYC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/smartinsurance/customerService/model/KYC.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/smartinsurance/customerService/service/impl/CustomerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/smartinsurance/customerService/service/impl/CustomerServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/smartinsurance/identityService/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/smartinsurance/identityService/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/smartinsurance/identityService/controller/AuthenticationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/smartinsurance/identityService/controller/AuthenticationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/smartinsurance/identityService/dto/AuthenticationResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/smartinsurance/identityService/dto/AuthenticationResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/smartinsurance/identityService/service/AuthenticationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/smartinsurance/identityService/service/AuthenticationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/smartinsurance/identityService/service/MfaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/smartinsurance/identityService/service/MfaService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/smartinsurance/identityService/service/impl/MfaServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/smartinsurance/identityService/service/impl/MfaServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/metadata/menu.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/metadata/menu.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apps" beforeDir="false" afterPath="$PROJECT_DIR$/../../apps" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager">
+    <option name="groupingKeys">
+      <option value="module" />
+      <option value="repository" />
+    </option>
+  </component>
+  <component name="CopilotPersistence">
+    <persistenceIdMap>
+      <entry key="_/home/ashim/personal/SI/smart-insurance" value="3Ff9JBWoRtfmHXoq8mAjt44VKRx" />
+      <entry key="_/home/ashim/personal/smart-insurance" value="3FcBq3m2bqn9VBBTVEUJY53EUHi" />
+    </persistenceIdMap>
+  </component>
+  <component name="EmbeddingIndexingInfo">
+    <option name="cachedIndexableFilesCount" value="464" />
+    <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="smart-insurance" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="smart-insurance" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0000000331205845" />
+      <entry key="S2" value="1.051510789927295" />
+      <entry key="S5" value="1.9703906442544432" />
+      <entry key="S10" value="3.601416324378836" />
+      <entry key="S30" value="6.030627306611044" />
+      <entry key="S60" value="6.933865185224834" />
+      <entry key="M2" value="7.444841805096205" />
+      <entry key="M5" value="7.774582611437602" />
+      <entry key="M10" value="7.967241557240589" />
+      <entry key="M15" value="8.20727862289399" />
+      <entry key="M30" value="9.579578524670321" />
+      <entry key="H1" value="21.45552666584788" />
+      <entry key="H2" value="62.379811225246485" />
+      <entry key="H4" value="121.09393129534124" />
+      <entry key="D1" value="218.1153828848514" />
+      <entry key="W1" value="241.79766333715554" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="0.0" />
+      <entry key="S5" value="0.0" />
+      <entry key="S10" value="0.0" />
+      <entry key="S30" value="2.306925831792017E-171" />
+      <entry key="S60" value="4.8064606744577906E-86" />
+      <entry key="M2" value="2.2500241482206456E-43" />
+      <entry key="M5" value="1.0662009307718915E-17" />
+      <entry key="M10" value="4.362120204268877E-9" />
+      <entry key="M15" value="3.31703741573247E-6" />
+      <entry key="M30" value="0.0025572535713899343" />
+      <entry key="H1" value="0.07138597439349686" />
+      <entry key="H2" value="0.377679631743655" />
+      <entry key="H4" value="0.8690149951017344" />
+      <entry key="D1" value="1.7405613288212431" />
+      <entry key="W1" value="1.9606936041959993" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="0.9794202975869268" />
+      <entry key="MS500" value="0.9958497860957338" />
+      <entry key="S2" value="1.0504020434066952" />
+      <entry key="S5" value="1.9693872224987885" />
+      <entry key="S10" value="3.6003900377546394" />
+      <entry key="S30" value="6.030016918051177" />
+      <entry key="S60" value="6.933509392881148" />
+      <entry key="M2" value="7.444649530814997" />
+      <entry key="M5" value="7.774501613978355" />
+      <entry key="M10" value="7.967192272994952" />
+      <entry key="M15" value="8.207230694161423" />
+      <entry key="M30" value="9.58205058717448" />
+      <entry key="H1" value="21.526779354586004" />
+      <entry key="H2" value="62.7573270697098" />
+      <entry key="H4" value="121.96280204223721" />
+      <entry key="D1" value="219.85590344494182" />
+      <entry key="W1" value="243.7583505359451" />
+    </decayedShown>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4,
+  &quot;fromUser&quot;: false
+}</component>
+  <component name="ProjectId" id="3FcBq3m2bqn9VBBTVEUJY53EUHi" />
+  <component name="ProjectSessionTemplates">
+    <option name="panelTemplate">
+      <template>
+        <option name="modeId" value="Agent" />
+        <option name="model">
+          <model>
+            <option name="modelProviderName" value="Groq" />
+            <option name="modelType" value="byok_family" />
+            <option name="modelValue" value="llama-3.1-8b-instant" />
+          </model>
+        </option>
+        <option name="targetType" value="BACKGROUND" />
+        <option name="worktreeMode" value="WORKSPACE" />
+      </template>
+    </option>
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.Build smart-insurance.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;Spring Boot.SmartInsuranceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;copilot.chat.legacySessionMetadata.migrated&quot;: &quot;true&quot;,
+    &quot;deletionFromPopupRequiresConfirmation&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;dev&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/ashim/personal/SI/smart-insurance&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;ml.llm.AcpAgentsConfigurable&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
+    ]
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.project.smartinsurance.applicationConfig.mapper" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="KtorApplicationConfigurationType" />
+        <option value="MicronautRunConfigurationType" />
+        <option value="QuarkusRunConfigurationType" />
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+    <option name="configurationStatuses">
+      <map>
+        <entry key="SpringBootApplicationConfigurationType">
+          <value>
+            <map>
+              <entry key="SmartInsuranceApplication" value="STOPPED" />
+            </map>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="SmartInsuranceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="smart-insurance.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.project.smartinsurance.SmartInsuranceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-37e91769500f-intellij.indexing.shared.core-IU-261.25134.95" />
+        <option value="bundled-js-predefined-d6986cc7102b-31caf2ab9e3c-JavaScript-IU-261.25134.95" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="923ab0de-d993-4842-9e76-2786ed69d79a" name="Changes" comment="" />
+      <created>1782364665030</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1782364665030</updated>
+      <workItem from="1782364666396" duration="6931000" />
+      <workItem from="1782375492134" duration="57000" />
+      <workItem from="1782375783088" duration="1541000" />
+      <workItem from="1782377493371" duration="9732000" />
+      <workItem from="1782455183422" duration="5570000" />
+      <workItem from="1782463155463" duration="899000" />
+      <workItem from="1782577911282" duration="17000" />
+      <workItem from="1782583897826" duration="30000" />
+      <workItem from="1782585750961" duration="18000" />
+      <workItem from="1782709946223" duration="119000" />
+      <workItem from="1782715825763" duration="219000" />
+      <workItem from="1782716773189" duration="151000" />
+      <workItem from="1782717418205" duration="987000" />
+      <workItem from="1782732500164" duration="21000" />
+      <workItem from="1782732584492" duration="41000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
