@@ -10,7 +10,6 @@ import org.mapstruct.ReportingPolicy;
 @Mapper(componentModel = "spring", unmappedTargetPolicy = ReportingPolicy.IGNORE)
 public abstract class ProductMapper {
 
-    @Mapping(target = "category", expression = "java(product.getCategory() != null ? product.getCategory().name() : null)")
     @Mapping(target = "lineOfBusiness", expression = "java(product.getLineOfBusiness() != null ? product.getLineOfBusiness().name() : null)")
     @Mapping(target = "productStatus", expression = "java(product.getProductStatus() != null ? product.getProductStatus().name() : null)")
     @Mapping(target = "status", expression = "java(product.getStatus() != null ? product.getStatus().name() : null)")
@@ -48,7 +47,7 @@ public abstract class ProductMapper {
     public void updateEntity(Product product, ProductUpdateRequest request) {
         if (request.getName() != null) product.setName(request.getName());
         if (request.getDescription() != null) product.setDescription(request.getDescription());
-        if (request.getCategory() != null) product.setCategory(ProductCategory.valueOf(request.getCategory()));
+        // category is resolved/validated in ProductServiceImpl
         if (request.getLineOfBusiness() != null) product.setLineOfBusiness(LineOfBusiness.valueOf(request.getLineOfBusiness()));
         if (request.getEffectiveFrom() != null) product.setEffectiveFrom(request.getEffectiveFrom());
         if (request.getEffectiveTo() != null) product.setEffectiveTo(request.getEffectiveTo());

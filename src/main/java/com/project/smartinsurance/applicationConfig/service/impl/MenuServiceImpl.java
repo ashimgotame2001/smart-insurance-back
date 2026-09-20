@@ -10,6 +10,9 @@ import com.project.smartinsurance.commonService.exception.GlobalException;
 import com.project.smartinsurance.commonService.model.Status;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.cache.Cache;
+import org.springframework.cache.CacheManager;
+import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.context.SecurityContextHolder;
@@ -27,17 +30,41 @@ public class MenuServiceImpl implements MenuService {
 
     private final MenuRepository menuRepository;
     private final ObjectMapper objectMapper;
+    private final CacheManager cacheManager;
 
     @Override
     @Transactional
+    @CacheEvict(value = "menuTree", allEntries = true)
     public void loadMenuFromJson() {
         try {
             InputStream inputStream = new ClassPathResource("metadata/menu.json").getInputStream();
             List<Map<String, Object>> menuData = objectMapper.readValue(inputStream, new TypeReference<>() {});
+            Set<String> codesInJson = new HashSet<>();
+            collectCodes(menuData, codesInJson);
             saveMenus(menuData, null);
+            List<Menu> orphans = menuRepository.findAll().stream()
+                    .filter(m -> !codesInJson.contains(m.getCode()))
+                    .collect(Collectors.toList());
+            if (!orphans.isEmpty()) {
+                menuRepository.deleteAll(orphans);
+                log.info("Removed {} orphaned menus", orphans.size());
+            }
             log.info("Menu data loaded successfully from JSON");
         } catch (Exception e) {
             log.error("Error loading menu data from JSON: {}", e.getMessage());
+        }
+    }
+
+    private void collectCodes(List<Map<String, Object>> menuData, Set<String> codes) {
+        for (Map<String, Object> data : menuData) {
+            String code = (String) data.get("code");
+            if (code != null) codes.add(code);
+            if (data.containsKey("subMenus")) {
+                List<Map<String, Object>> subMenusData = (List<Map<String, Object>>) data.get("subMenus");
+                if (subMenusData != null) {
+                    collectCodes(subMenusData, codes);
+                }
+            }
         }
     }
 
@@ -77,33 +104,71 @@ public class MenuServiceImpl implements MenuService {
                 .map(GrantedAuthority::getAuthority)
                 .collect(Collectors.toSet());
 
-        List<Menu> rootMenus = menuRepository.findByParentIsNullAndStatusOrderByDisplayOrderAsc(Status.ACTIVE);
-        log.info("Found {} root menus for current user", rootMenus.size());
-        return rootMenus.stream()
-                .map(menu -> convertToDto(menu, authorities))
-                .filter(dto -> dto != null)
+        List<MenuDto> fullTree = getFullMenuTree();
+        return fullTree.stream()
+                .map(menu -> filterMenuDto(menu, authorities))
+                .filter(Objects::nonNull)
                 .collect(Collectors.toList());
     }
 
-    private MenuDto convertToDto(Menu menu, Set<String> authorities) {
-        if (menu.getPermission() != null && !menu.getPermission().isEmpty()
-                && !authorities.contains(menu.getPermission())) {
-            return null;
+    @SuppressWarnings("unchecked")
+    public List<MenuDto> getFullMenuTree() {
+        Cache cache = cacheManager.getCache("menuTree");
+        if (cache != null) {
+            List<MenuDto> cached = cache.get("fullTree", List.class);
+            if (cached != null) {
+                return cached;
+            }
         }
+        List<Menu> rootMenus = menuRepository.findByParentIsNullAndStatus(Status.ACTIVE);
+        log.info("Loaded {} root menus from DB", rootMenus.size());
+        List<MenuDto> tree = rootMenus.stream()
+                .map(this::buildFullMenuDto)
+                .collect(Collectors.toList());
+        if (cache != null) {
+            cache.put("fullTree", tree);
+        }
+        return tree;
+    }
 
+    private MenuDto buildFullMenuDto(Menu menu) {
         List<MenuDto> subMenuDtos = new ArrayList<>();
         if (menu.getSubMenus() != null) {
             for (Menu subMenu : menu.getSubMenus()) {
                 if (subMenu.getStatus() != null && subMenu.getStatus() == Status.ACTIVE) {
-                    MenuDto subDto = convertToDto(subMenu, authorities);
-                    if (subDto != null) {
-                        subMenuDtos.add(subDto);
-                    }
+                    subMenuDtos.add(buildFullMenuDto(subMenu));
                 }
             }
         }
-
         return toDto(menu, subMenuDtos);
+    }
+
+    private MenuDto filterMenuDto(MenuDto source, Set<String> authorities) {
+        if (source.getPermission() != null && !source.getPermission().isEmpty()
+                && !authorities.contains(source.getPermission())) {
+            return null;
+        }
+        List<MenuDto> filteredChildren = null;
+        if (source.getSubMenus() != null) {
+            filteredChildren = new ArrayList<>();
+            for (MenuDto child : source.getSubMenus()) {
+                MenuDto filtered = filterMenuDto(child, authorities);
+                if (filtered != null) {
+                    filteredChildren.add(filtered);
+                }
+            }
+        }
+        return MenuDto.builder()
+                .id(source.getId())
+                .name(source.getName())
+                .code(source.getCode())
+                .path(source.getPath())
+                .icon(source.getIcon())
+                .description(source.getDescription())
+                .permission(source.getPermission())
+                .displayOrder(source.getDisplayOrder())
+                .subMenus(filteredChildren)
+                .build();
     }
 
     private MenuDto toDto(Menu menu, List<MenuDto> subMenuDtos) {
@@ -122,6 +187,7 @@ public class MenuServiceImpl implements MenuService {
 
     @Override
     @Transactional
+    @CacheEvict(value = "menuTree", allEntries = true)
     public MenuDto createMenu(MenuDto dto) {
         if (menuRepository.existsByCode(dto.getCode())) {
             throw new GlobalException("MNU-002", dto.getCode());
@@ -134,6 +200,7 @@ public class MenuServiceImpl implements MenuService {
 
     @Override
     @Transactional
+    @CacheEvict(value = "menuTree", allEntries = true)
     public MenuDto updateMenu(UUID id, MenuDto dto) {
         Menu menu = menuRepository.findById(id)
                 .orElseThrow(() -> new GlobalException("MNU-001", id));
@@ -157,6 +224,7 @@ public class MenuServiceImpl implements MenuService {
 
     @Override
     @Transactional
+    @CacheEvict(value = "menuTree", allEntries = true)
     public void deleteMenu(UUID id) {
         Menu menu = menuRepository.findById(id)
                 .orElseThrow(() -> new GlobalException("MNU-001", id));

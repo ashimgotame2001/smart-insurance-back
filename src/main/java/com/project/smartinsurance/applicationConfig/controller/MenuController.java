@@ -24,47 +24,47 @@ public class MenuController {
     @GetMapping("/tree")
     public ResponseEntity<ApiResponse<List<MenuDto>>> getMenuTree() {
         List<MenuDto> menuTree = menuService.getMenuTreeForCurrentUser();
-        return ResponseEntity.ok(successResponseBuilder.buildSuccessResponse("SUC001", menuTree));
+        return ResponseEntity.ok(successResponseBuilder.buildSuccessResponse("MENU-SUC-001", menuTree));
     }
 
     @PreAuthorize("hasAuthority('PERM_MASTER_DATA_WRITE')")
     @PostMapping
     public ResponseEntity<ApiResponse<MenuDto>> createMenu(@RequestBody MenuDto dto) {
         MenuDto created = menuService.createMenu(dto);
-        return ResponseEntity.ok(successResponseBuilder.buildSuccessResponse("SUC002", created));
+        return ResponseEntity.ok(successResponseBuilder.buildSuccessResponse("MENU-SUC-002", created));
     }
 
     @PreAuthorize("hasAuthority('PERM_MASTER_DATA_UPDATE')")
     @PutMapping("/{id}")
     public ResponseEntity<ApiResponse<MenuDto>> updateMenu(@PathVariable UUID id, @RequestBody MenuDto dto) {
         MenuDto updated = menuService.updateMenu(id, dto);
-        return ResponseEntity.ok(successResponseBuilder.buildSuccessResponse("SUC003", updated));
+        return ResponseEntity.ok(successResponseBuilder.buildSuccessResponse("MENU-SUC-003", updated));
     }
 
     @PreAuthorize("hasAuthority('PERM_MASTER_DATA_READ')")
     @GetMapping("/{id}")
     public ResponseEntity<ApiResponse<MenuDto>> getMenuById(@PathVariable UUID id) {
         MenuDto menu = menuService.getMenuById(id);
-        return ResponseEntity.ok(successResponseBuilder.buildSuccessResponse("SUC001", menu));
+        return ResponseEntity.ok(successResponseBuilder.buildSuccessResponse("MENU-SUC-004", menu));
     }
 
     @GetMapping
     public ResponseEntity<ApiResponse<List<MenuDto>>> getAllMenus() {
         List<MenuDto> menus = menuService.getAllMenus();
-        return ResponseEntity.ok(successResponseBuilder.buildSuccessResponse("SUC001", menus));
+        return ResponseEntity.ok(successResponseBuilder.buildSuccessResponse("MENU-SUC-005", menus));
     }
 
     @PreAuthorize("hasAuthority('PERM_MASTER_DATA_DELETE')")
     @DeleteMapping("/{id}")
     public ResponseEntity<ApiResponse<Void>> deleteMenu(@PathVariable UUID id) {
         menuService.deleteMenu(id);
-        return ResponseEntity.ok(successResponseBuilder.buildSuccessResponse("SUC004", null));
+        return ResponseEntity.ok(successResponseBuilder.buildSuccessResponse("MENU-SUC-006", null));
     }
 
     @PreAuthorize("hasAuthority('PERM_MASTER_DATA_WRITE')")
     @PostMapping("/load-json")
     public ResponseEntity<ApiResponse<Void>> loadMenuFromJson() {
         menuService.loadMenuFromJson();
-        return ResponseEntity.ok(successResponseBuilder.buildSuccessResponse("SUC001", null));
+        return ResponseEntity.ok(successResponseBuilder.buildSuccessResponse("MENU-SUC-007", null));
     }
 }

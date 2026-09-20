@@ -35,7 +35,21 @@ public class ProductServiceImpl implements ProductService {
     private final ProductVersionRepository productVersionRepository;
     private final ProductChannelMappingRepository productChannelMappingRepository;
     private final ProductDocumentRepository productDocumentRepository;
+    private final CategoryRepository categoryRepository;
     private final ProductMapper productMapper;
+
+    private String resolveCategoryCode(String categoryCode) {
+        if (categoryCode == null || categoryCode.isBlank()) {
+            return null;
+        }
+        String code = categoryCode.trim();
+        Category category = categoryRepository.findByCode(code)
+                .orElseThrow(() -> new GlobalException("PRD-017", code));
+        if (Boolean.TRUE.equals(category.getDeleted())) {
+            throw new GlobalException("PRD-017", code);
+        }
+        return category.getCode();
+    }
 
     @Override
     @Transactional
@@ -48,7 +62,7 @@ public class ProductServiceImpl implements ProductService {
                 .code(request.getCode())
                 .name(request.getName())
                 .description(request.getDescription())
-                .category(request.getCategory() != null ? ProductCategory.valueOf(request.getCategory()) : null)
+                .category(resolveCategoryCode(request.getCategory()))
                 .lineOfBusiness(request.getLineOfBusiness() != null ? LineOfBusiness.valueOf(request.getLineOfBusiness()) : null)
                 .productStatus(ProductStatus.DRAFT)
                 .version(1)
@@ -91,6 +105,9 @@ public class ProductServiceImpl implements ProductService {
     @Transactional
     public ProductDto updateProduct(UUID id, ProductUpdateRequest request) {
         Product product = findProductOrThrow(id);
+        if (request.getCategory() != null) {
+            product.setCategory(resolveCategoryCode(request.getCategory()));
+        }
         productMapper.updateEntity(product, request);
         product = productRepository.save(product);
         createVersionSnapshot(product, "Product updated");
@@ -140,7 +157,7 @@ public class ProductServiceImpl implements ProductService {
                     })
                     .orElseGet(() -> Page.empty(pageable));
         } else if (request.getCategory() != null) {
-            page = productRepository.findByCategory(ProductCategory.valueOf(request.getCategory()), pageable);
+            page = productRepository.findByCategory(request.getCategory(), pageable);
         } else if (request.getLineOfBusiness() != null) {
             page = productRepository.findByLineOfBusiness(LineOfBusiness.valueOf(request.getLineOfBusiness()), pageable);
         } else if (request.getName() != null) {
@@ -690,7 +707,7 @@ public class ProductServiceImpl implements ProductService {
         dto.setCode(product.getCode());
         dto.setName(product.getName());
         dto.setDescription(product.getDescription());
-        dto.setCategory(product.getCategory() != null ? product.getCategory().name() : null);
+        dto.setCategory(product.getCategory());
         dto.setLineOfBusiness(product.getLineOfBusiness() != null ? product.getLineOfBusiness().name() : null);
         dto.setProductStatus(product.getProductStatus() != null ? product.getProductStatus().name() : null);
         dto.setVersion(product.getVersion());

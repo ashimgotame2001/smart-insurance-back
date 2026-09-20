@@ -12,6 +12,7 @@ import java.util.UUID;
 @Repository
 public interface MenuRepository extends JpaRepository<Menu, UUID> {
     List<Menu> findByParentIsNullAndStatusOrderByDisplayOrderAsc(Status status);
+    List<Menu> findByParentIsNullAndStatus(Status status);
     Optional<Menu> findByCode(String code);
     boolean existsByCode(String code);
 }

@@ -2,7 +2,6 @@ package com.project.smartinsurance.productService.model;
 
 import com.project.smartinsurance.commonService.model.BaseEntity;
 import com.project.smartinsurance.productService.model.enums.LineOfBusiness;
-import com.project.smartinsurance.productService.model.enums.ProductCategory;
 import com.project.smartinsurance.productService.model.enums.ProductStatus;
 import jakarta.persistence.*;
 import lombok.*;
@@ -28,8 +27,9 @@ public class Product extends BaseEntity {
     @Column(columnDefinition = "TEXT")
     private String description;
 
-    @Enumerated(EnumType.STRING)
-    private ProductCategory category;
+    /** Product category code from product_categories catalog */
+    @Column(name = "category")
+    private String category;
 
     @Enumerated(EnumType.STRING)
     private LineOfBusiness lineOfBusiness;

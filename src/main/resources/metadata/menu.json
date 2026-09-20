@@ -3,7 +3,7 @@
     "name": "Accounting",
     "code": "ACCOUNTING",
     "path": "/accounting",
-    "icon": "AccountBalanceIcon",
+    "icon": "AccountBookOutlined",
     "description": "General ledger and financial reporting",
     "permission": "PERM_ACCOUNTING_READ",
     "status": "ACTIVE",
@@ -14,7 +14,8 @@
         "path": "/accounting/ap",
         "description": "Manage accounts payable",
         "permission": "PERM_ACCOUNTS_PAYABLE_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "CreditCardOutlined"
       },
       {
         "name": "Accounts Receivable",
@@ -22,7 +23,8 @@
         "path": "/accounting/ar",
         "description": "Manage accounts receivable",
         "permission": "PERM_ACCOUNTS_RECEIVABLE_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "DollarOutlined"
       },
       {
         "name": "Balance Sheet",
@@ -30,7 +32,8 @@
         "path": "/accounting/balance-sheet",
         "description": "Generate balance sheet",
         "permission": "PERM_BALANCE_SHEET_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "AuditOutlined"
       },
       {
         "name": "Bank Reconciliation",
@@ -38,7 +41,8 @@
         "path": "/accounting/bank-recon",
         "description": "Perform bank reconciliation",
         "permission": "PERM_BANK_RECONCILIATION_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "ReconciliationOutlined"
       },
       {
         "name": "Cash Book",
@@ -46,7 +50,8 @@
         "path": "/accounting/cash-book",
         "description": "Manage cash book",
         "permission": "PERM_CASH_BOOK_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "BookOutlined"
       },
       {
         "name": "Chart of Accounts",
@@ -54,7 +59,8 @@
         "path": "/accounting/coa",
         "description": "Manage chart of accounts",
         "permission": "PERM_CHART_OF_ACCOUNTS_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "BookOutlined"
       },
       {
         "name": "General Ledger",
@@ -62,7 +68,8 @@
         "path": "/accounting/gl",
         "description": "View general ledger",
         "permission": "PERM_GENERAL_LEDGER_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "TableOutlined"
       },
       {
         "name": "Journal Entries",
@@ -70,7 +77,8 @@
         "path": "/accounting/journal",
         "description": "Post journal entries",
         "permission": "PERM_JOURNAL_ENTRIES_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "FileTextOutlined"
       },
       {
         "name": "Profit & Loss",
@@ -78,7 +86,8 @@
         "path": "/accounting/pl",
         "description": "Generate P&L statement",
         "permission": "PERM_PROFIT_LOSS_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "PieChartOutlined"
       },
       {
         "name": "Tax Management",
@@ -86,7 +95,8 @@
         "path": "/accounting/tax",
         "description": "Configure and manage taxes",
         "permission": "PERM_TAX_MANAGEMENT_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "PercentageOutlined"
       },
       {
         "name": "Trial Balance",
@@ -94,7 +104,8 @@
         "path": "/accounting/trial-balance",
         "description": "Generate trial balance",
         "permission": "PERM_TRIAL_BALANCE_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "AuditOutlined"
       }
     ]
   },
@@ -102,7 +113,7 @@
     "name": "Agent and Broker Management",
     "code": "AGENT_BROKER_MANAGEMENT",
     "path": "/agent-management",
-    "icon": "SupportAgentIcon",
+    "icon": "UserSwitchOutlined",
     "description": "Manage agents and brokers",
     "permission": "PERM_AGENT_BROKER_READ",
     "status": "ACTIVE",
@@ -113,7 +124,8 @@
         "path": "/agent-management/list",
         "description": "Browse and manage the agent network",
         "permission": "PERM_AGENT_BROKER_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "ClusterOutlined"
       },
       {
         "name": "Agent Registration",
@@ -121,7 +133,8 @@
         "path": "/agent-management/register",
         "description": "Register new agents",
         "permission": "PERM_AGENT_REGISTRATION_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "UserAddOutlined"
       },
       {
         "name": "Agent License",
@@ -129,7 +142,8 @@
         "path": "/agent-management/licenses",
         "description": "Manage agent licenses",
         "permission": "PERM_AGENT_LICENSE_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "IdcardOutlined"
       },
       {
         "name": "Broker Registration",
@@ -137,7 +151,8 @@
         "path": "/agent-management/broker-register",
         "description": "Register new brokers",
         "permission": "PERM_BROKER_REGISTRATION_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "ShopOutlined"
       },
       {
         "name": "Broker License",
@@ -145,7 +160,8 @@
         "path": "/agent-management/broker-license",
         "description": "Manage broker licenses",
         "permission": "PERM_BROKER_LICENSE_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "SafetyCertificateOutlined"
       },
       {
         "name": "Branch Assignment",
@@ -153,7 +169,8 @@
         "path": "/agent-management/branch-assign",
         "description": "Assign agents to branches",
         "permission": "PERM_AGENT_BRANCH_ASSIGNMENT_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "BranchesOutlined"
       },
       {
         "name": "Agent Settlements",
@@ -161,7 +178,8 @@
         "path": "/agent-management/settlements",
         "description": "Process agent payments and settlements",
         "permission": "PERM_AGENT_SETTLEMENTS_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "TransactionOutlined"
       },
       {
         "name": "Agent Targets",
@@ -169,7 +187,8 @@
         "path": "/agent-management/targets",
         "description": "Set and monitor agent targets",
         "permission": "PERM_AGENT_TARGETS_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "LineChartOutlined"
       },
       {
         "name": "Agent Wallet",
@@ -177,7 +196,8 @@
         "path": "/agent-management/wallet",
         "description": "Manage agent wallets and earnings",
         "permission": "PERM_AGENT_WALLET_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "WalletOutlined"
       },
       {
         "name": "Sales Performance",
@@ -185,7 +205,8 @@
         "path": "/agent-management/sales-perf",
         "description": "Track sales performance",
         "permission": "PERM_SALES_PERFORMANCE_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "LineChartOutlined"
       }
     ]
   },
@@ -204,7 +225,8 @@
         "path": "/commission/setup",
         "description": "Configure commission structures",
         "permission": "PERM_COMMISSION_SETUP_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "PercentageOutlined"
       },
       {
         "name": "Commission Rules",
@@ -212,7 +234,8 @@
         "path": "/commission/rules",
         "description": "Define commission calculation rules",
         "permission": "PERM_COMMISSION_RULES_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "DollarOutlined"
       }
     ]
   },
@@ -220,7 +243,7 @@
     "name": "Audit & Monitoring",
     "code": "AUDIT_MONITORING",
     "path": "/audit",
-    "icon": "SettingOutlined",
+    "icon": "AuditOutlined",
     "description": "Audit logs and session monitoring",
     "permission": "PERM_AUDIT_LOG_READ",
     "status": "ACTIVE",
@@ -231,7 +254,8 @@
         "path": "/user-management/sessions",
         "description": "Monitor active user sessions",
         "permission": "PERM_SESSION_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "ClockCircleOutlined"
       },
       {
         "name": "Audit Logs",
@@ -239,7 +263,8 @@
         "path": "/user-management/audit-logs",
         "description": "View system audit logs",
         "permission": "PERM_AUDIT_LOG_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "AuditOutlined"
       }
     ]
   },
@@ -247,7 +272,7 @@
     "name": "Billing & Payments",
     "code": "BILLING_PAYMENTS",
     "path": "/billing",
-    "icon": "ReceiptLongIcon",
+    "icon": "CreditCardOutlined",
     "description": "Invoicing, receipts and payments",
     "permission": "PERM_BILLING_PAYMENTS_READ",
     "status": "ACTIVE",
@@ -258,7 +283,8 @@
         "path": "/billing",
         "description": "Billing workspace overview",
         "permission": "PERM_BILLING_PAYMENTS_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "CreditCardOutlined"
       },
       {
         "name": "Premium Schedule",
@@ -266,7 +292,8 @@
         "path": "/billing/schedules",
         "description": "View premium payment schedules",
         "permission": "PERM_PREMIUM_SCHEDULE_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "CalendarOutlined"
       },
       {
         "name": "Installments",
@@ -274,7 +301,8 @@
         "path": "/billing/installments",
         "description": "Manage premium installments",
         "permission": "PERM_PREMIUM_INSTALLMENTS_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "CalendarOutlined"
       },
       {
         "name": "Outstanding Premium",
@@ -282,7 +310,8 @@
         "path": "/billing/outstanding",
         "description": "Monitor outstanding premiums",
         "permission": "PERM_OUTSTANDING_PREMIUM_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "WarningOutlined"
       },
       {
         "name": "Bank Accounts",
@@ -290,7 +319,8 @@
         "path": "/billing/bank-accounts",
         "description": "Manage company bank accounts",
         "permission": "PERM_BANK_ACCOUNTS_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "BankOutlined"
       },
       {
         "name": "Invoice",
@@ -298,7 +328,8 @@
         "path": "/billing/invoices",
         "description": "Manage invoices",
         "permission": "PERM_INVOICES_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "FileTextOutlined"
       },
       {
         "name": "Payment Collection",
@@ -306,7 +337,8 @@
         "path": "/billing/collect",
         "description": "Record payment collections",
         "permission": "PERM_PAYMENT_COLLECTION_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "WalletOutlined"
       },
       {
         "name": "Payment History",
@@ -314,7 +346,8 @@
         "path": "/billing/history",
         "description": "View payment transaction history",
         "permission": "PERM_PAYMENT_HISTORY_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "HistoryOutlined"
       },
       {
         "name": "Receipts",
@@ -322,7 +355,8 @@
         "path": "/billing/receipts",
         "description": "Generate and view receipts",
         "permission": "PERM_RECEIPTS_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "FileTextOutlined"
       },
       {
         "name": "Online Payments",
@@ -330,7 +364,8 @@
         "path": "/billing/online",
         "description": "Monitor online payment transactions",
         "permission": "PERM_ONLINE_PAYMENTS_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "GlobalOutlined"
       },
       {
         "name": "Payment Gateway",
@@ -338,7 +373,8 @@
         "path": "/billing/gateway",
         "description": "Configure payment gateways",
         "permission": "PERM_PAYMENT_GATEWAY_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "CreditCardOutlined"
       },
       {
         "name": "Payment Reconciliation",
@@ -346,7 +382,8 @@
         "path": "/billing/reconcile",
         "description": "Reconcile payments with bank statements",
         "permission": "PERM_PAYMENT_RECONCILIATION_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "ReconciliationOutlined"
       },
       {
         "name": "Refund",
@@ -354,7 +391,8 @@
         "path": "/billing/refund",
         "description": "Process billing refunds",
         "permission": "PERM_BILLING_REFUND_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "TransactionOutlined"
       },
       {
         "name": "Waivers & Adjustments",
@@ -362,7 +400,8 @@
         "path": "/billing/adjustments",
         "description": "Premium waivers and adjustments",
         "permission": "PERM_PREMIUM_ADJUSTMENT_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "EditOutlined"
       }
     ]
   },
@@ -370,7 +409,7 @@
     "name": "Claims Management",
     "code": "CLAIMS_MANAGEMENT",
     "path": "/claims-management",
-    "icon": "MedicalInformationIcon",
+    "icon": "MedicineBoxOutlined",
     "description": "Process and manage insurance claims",
     "permission": "PERM_CLAIMS_MANAGEMENT_READ",
     "status": "ACTIVE",
@@ -381,7 +420,8 @@
         "path": "/claims-management/approval",
         "description": "Approve or recommend claims",
         "permission": "PERM_CLAIM_APPROVAL_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "CheckCircleOutlined"
       },
       {
         "name": "Claim History",
@@ -389,7 +429,8 @@
         "path": "/claims-management/history",
         "description": "View claim lifecycle history",
         "permission": "PERM_CLAIM_HISTORY_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "HistoryOutlined"
       },
       {
         "name": "Claim Payment",
@@ -397,7 +438,8 @@
         "path": "/claims-management/payment",
         "description": "Process claim payments",
         "permission": "PERM_CLAIM_PAYMENT_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "DollarOutlined"
       },
       {
         "name": "Claim Recovery",
@@ -405,7 +447,8 @@
         "path": "/claims-management/recovery",
         "description": "Manage claim recoveries",
         "permission": "PERM_CLAIM_RECOVERY_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "PullRequestOutlined"
       },
       {
         "name": "Claim Rejection",
@@ -413,7 +456,8 @@
         "path": "/claims-management/reject",
         "description": "Reject non-eligible claims",
         "permission": "PERM_CLAIM_REJECTION_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "StopOutlined"
       },
       {
         "name": "Claim Settlement",
@@ -421,7 +465,8 @@
         "path": "/claims-management/settle",
         "description": "Finalize claim settlement amount",
         "permission": "PERM_CLAIM_SETTLEMENT_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "ReconciliationOutlined"
       },
       {
         "name": "Claim Verification",
@@ -429,7 +474,8 @@
         "path": "/claims-management/verify",
         "description": "Verify claim details",
         "permission": "PERM_CLAIM_VERIFICATION_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "CheckSquareOutlined"
       },
       {
         "name": "Document Verification",
@@ -437,7 +483,8 @@
         "path": "/claims-management/doc-verify",
         "description": "Verify submitted claim documents",
         "permission": "PERM_CLAIM_DOC_VERIFY_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "FileSearchOutlined"
       },
       {
         "name": "Fraud Investigation",
@@ -445,7 +492,8 @@
         "path": "/claims-management/fraud",
         "description": "Specialized fraud investigation",
         "permission": "PERM_FRAUD_INVESTIGATION_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "WarningOutlined"
       },
       {
         "name": "Investigation",
@@ -453,7 +501,8 @@
         "path": "/claims-management/investigate",
         "description": "Investigate claim legitimacy",
         "permission": "PERM_CLAIM_INVESTIGATION_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "FileSearchOutlined"
       },
       {
         "name": "Medical Review",
@@ -461,7 +510,8 @@
         "path": "/claims-management/medical-review",
         "description": "Review medical claims",
         "permission": "PERM_CLAIM_MEDICAL_REVIEW_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "MedicineBoxOutlined"
       },
       {
         "name": "Register Claim",
@@ -469,7 +519,8 @@
         "path": "/claims-management/register",
         "description": "Intimate new claim",
         "permission": "PERM_REGISTER_CLAIM_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "FileProtectOutlined"
       },
       {
         "name": "Salvage",
@@ -477,7 +528,8 @@
         "path": "/claims-management/salvage",
         "description": "Manage salvage items",
         "permission": "PERM_CLAIM_SALVAGE_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "ToolOutlined"
       },
       {
         "name": "Survey Assignment",
@@ -485,7 +537,8 @@
         "path": "/claims-management/survey-assign",
         "description": "Assign surveyors to claims",
         "permission": "PERM_SURVEY_ASSIGNMENT_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "SolutionOutlined"
       }
     ]
   },
@@ -493,7 +546,7 @@
     "name": "Customer Management",
     "code": "CUSTOMER_MANAGEMENT",
     "path": "/customer-management",
-    "icon": "GroupsIcon",
+    "icon": "TeamOutlined",
     "description": "Manage individual and corporate customers",
     "permission": "PERM_CUSTOMER_MANAGEMENT_READ",
     "status": "ACTIVE",
@@ -503,7 +556,7 @@
         "name": "Customers",
         "code": "CUSTOMERS",
         "path": "/customer-management/customers",
-        "icon": "GroupsIcon",
+        "icon": "TeamOutlined",
         "description": "Individual, corporate, and government customers",
         "permission": "PERM_CUSTOMER_MANAGEMENT_READ",
         "status": "ACTIVE",
@@ -514,7 +567,8 @@
             "path": "/customer-management/individual",
             "description": "Manage individual policy holders",
             "permission": "PERM_INDIVIDUAL_CUSTOMERS_READ",
-            "status": "ACTIVE"
+            "status": "ACTIVE",
+            "icon": "UserOutlined"
           },
           {
             "name": "Corporate",
@@ -522,7 +576,8 @@
             "path": "/customer-management/corporate",
             "description": "Manage corporate clients",
             "permission": "PERM_CORPORATE_CUSTOMERS_READ",
-            "status": "ACTIVE"
+            "status": "ACTIVE",
+            "icon": "BankOutlined"
           },
           {
             "name": "Government",
@@ -530,7 +585,8 @@
             "path": "/customer-management/government",
             "description": "Manage government clients",
             "permission": "PERM_GOVERNMENT_CUSTOMERS_READ",
-            "status": "ACTIVE"
+            "status": "ACTIVE",
+            "icon": "GlobalOutlined"
           }
         ]
       },
@@ -540,7 +596,8 @@
         "path": "/customer-management/beneficiaries",
         "description": "Manage customer beneficiaries",
         "permission": "PERM_BENEFICIARIES_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "TeamOutlined"
       },
       {
         "name": "Blacklist",
@@ -548,7 +605,8 @@
         "path": "/customer-management/blacklist",
         "description": "Manage blacklisted customers",
         "permission": "PERM_CUSTOMER_BLACKLIST_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "StopOutlined"
       },
       {
         "name": "Customer Documents",
@@ -556,7 +614,8 @@
         "path": "/customer-management/documents",
         "description": "Customer document repository",
         "permission": "PERM_CUSTOMER_DOCUMENTS_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "FolderOutlined"
       },
       {
         "name": "Customer Notes",
@@ -564,7 +623,8 @@
         "path": "/customer-management/notes",
         "description": "Customer interaction notes",
         "permission": "PERM_CUSTOMER_NOTES_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "EditOutlined"
       },
       {
         "name": "Customer Onboarding",
@@ -572,7 +632,8 @@
         "path": "/customer-management/onboarding",
         "description": "Customer onboarding workflow",
         "permission": "PERM_CUSTOMER_ONBOARDING_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "UserAddOutlined"
       },
       {
         "name": "Customer Risk Profile",
@@ -580,7 +641,8 @@
         "path": "/customer-management/risk-profile",
         "description": "Analyze customer risk profiles",
         "permission": "PERM_CUSTOMER_RISK_PROFILE_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "WarningOutlined"
       },
       {
         "name": "Customer Search",
@@ -588,7 +650,8 @@
         "path": "/customer-management/search",
         "description": "Advanced customer search",
         "permission": "PERM_CUSTOMER_SEARCH_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "SearchOutlined"
       },
       {
         "name": "Customer Timeline",
@@ -596,7 +659,8 @@
         "path": "/customer-management/timeline",
         "description": "Customer history timeline",
         "permission": "PERM_CUSTOMER_TIMELINE_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "HistoryOutlined"
       },
       {
         "name": "Family Members",
@@ -604,7 +668,8 @@
         "path": "/customer-management/family",
         "description": "Manage family member details",
         "permission": "PERM_FAMILY_MEMBERS_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "TeamOutlined"
       },
       {
         "name": "Identity Documents",
@@ -612,7 +677,8 @@
         "path": "/customer-management/identity-docs",
         "description": "Manage customer identity documents",
         "permission": "PERM_IDENTITY_DOCUMENTS_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "IdcardOutlined"
       },
       {
         "name": "KYC Verification",
@@ -620,7 +686,8 @@
         "path": "/customer-management/kyc",
         "description": "Know Your Customer verification",
         "permission": "PERM_KYC_VERIFICATION_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "IdcardOutlined"
       },
       {
         "name": "Nominees",
@@ -628,7 +695,8 @@
         "path": "/customer-management/nominees",
         "description": "Manage customer nominees",
         "permission": "PERM_NOMINEES_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "SolutionOutlined"
       }
     ]
   },
@@ -636,7 +704,7 @@
     "name": "Dashboard",
     "code": "DASHBOARD",
     "path": "/dashboard",
-    "icon": "DashboardIcon",
+    "icon": "DashboardOutlined",
     "description": "System Overview",
     "permission": "PERM_DASHBOARD_READ",
     "status": "ACTIVE",
@@ -647,7 +715,8 @@
         "path": "/dashboard/agent",
         "description": "Agent performance and activity",
         "permission": "PERM_AGENT_DASHBOARD_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "UserSwitchOutlined"
       },
       {
         "name": "Branch Dashboard",
@@ -655,7 +724,8 @@
         "path": "/dashboard/branch",
         "description": "Branch-wise performance metrics",
         "permission": "PERM_BRANCH_DASHBOARD_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "BankOutlined"
       },
       {
         "name": "Claims Dashboard",
@@ -663,7 +733,8 @@
         "path": "/dashboard/claims",
         "description": "Claims processing and trends",
         "permission": "PERM_CLAIMS_DASHBOARD_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "MedicineBoxOutlined"
       },
       {
         "name": "Customer Dashboard",
@@ -671,7 +742,8 @@
         "path": "/dashboard/customer",
         "description": "Customer insights and segmentation",
         "permission": "PERM_CUSTOMER_DASHBOARD_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "TeamOutlined"
       },
       {
         "name": "Executive Dashboard",
@@ -679,7 +751,8 @@
         "path": "/dashboard/executive",
         "description": "Executive overview and KPIs",
         "permission": "PERM_EXECUTIVE_DASHBOARD_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "FundProjectionScreenOutlined"
       },
       {
         "name": "Finance Dashboard",
@@ -687,7 +760,8 @@
         "path": "/dashboard/finance",
         "description": "Financial metrics and reconciliations",
         "permission": "PERM_FINANCE_DASHBOARD_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "FundOutlined"
       },
       {
         "name": "KPI & Analytics",
@@ -695,7 +769,8 @@
         "path": "/dashboard/kpi",
         "description": "Key performance indicators and analytics",
         "permission": "PERM_KPI_ANALYTICS_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "BarChartOutlined"
       },
       {
         "name": "Sales Dashboard",
@@ -703,7 +778,8 @@
         "path": "/dashboard/sales",
         "description": "Sales pipeline and revenue tracking",
         "permission": "PERM_SALES_DASHBOARD_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "LineChartOutlined"
       },
       {
         "name": "Underwriter Dashboard",
@@ -711,7 +787,8 @@
         "path": "/dashboard/underwriter",
         "description": "Underwriting activity and risk metrics",
         "permission": "PERM_UNDERWRITER_DASHBOARD_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "CheckSquareOutlined"
       }
     ]
   },
@@ -719,7 +796,7 @@
     "name": "Policy Management",
     "code": "POLICY_MANAGEMENT",
     "path": "/policy-management",
-    "icon": "DescriptionIcon",
+    "icon": "FileProtectOutlined",
     "description": "Life cycle management of insurance policies",
     "permission": "PERM_POLICY_MANAGEMENT_READ",
     "status": "ACTIVE",
@@ -730,7 +807,8 @@
         "path": "/policy-management/new",
         "description": "Issue new policy",
         "permission": "PERM_NEW_POLICY_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "FileProtectOutlined"
       },
       {
         "name": "Policy Cancellation",
@@ -738,7 +816,8 @@
         "path": "/policy-management/cancel",
         "description": "Cancel insurance policy",
         "permission": "PERM_POLICY_CANCELLATION_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "StopOutlined"
       },
       {
         "name": "Policy Documents",
@@ -746,7 +825,8 @@
         "path": "/policy-management/documents",
         "description": "Manage policy related documents",
         "permission": "PERM_POLICY_DOCUMENTS_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "FileTextOutlined"
       },
       {
         "name": "Policy Downgrade",
@@ -754,7 +834,8 @@
         "path": "/policy-management/downgrade",
         "description": "Reduce policy coverage",
         "permission": "PERM_POLICY_DOWNGRADE_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "ArrowDownOutlined"
       },
       {
         "name": "Policy Endorsement",
@@ -762,7 +843,8 @@
         "path": "/policy-management/endorsement",
         "description": "Policy endorsements/alterations",
         "permission": "PERM_POLICY_ENDORSEMENT_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "EditOutlined"
       },
       {
         "name": "Policy History",
@@ -770,7 +852,8 @@
         "path": "/policy-management/history",
         "description": "View policy audit history",
         "permission": "PERM_POLICY_HISTORY_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "HistoryOutlined"
       },
       {
         "name": "Policy Reinstatement",
@@ -778,7 +861,8 @@
         "path": "/policy-management/reinstate",
         "description": "Reinstate lapsed policy",
         "permission": "PERM_POLICY_REINSTATEMENT_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "CheckCircleOutlined"
       },
       {
         "name": "Policy Renewal",
@@ -786,7 +870,8 @@
         "path": "/policy-management/renewal",
         "description": "Renew existing policy",
         "permission": "PERM_POLICY_RENEWAL_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "ReloadOutlined"
       },
       {
         "name": "Policy Search",
@@ -794,7 +879,8 @@
         "path": "/policy-management/search",
         "description": "Search and view policies",
         "permission": "PERM_POLICY_SEARCH_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "SearchOutlined"
       },
       {
         "name": "Policy Suspension",
@@ -802,7 +888,8 @@
         "path": "/policy-management/suspend",
         "description": "Suspend active policy",
         "permission": "PERM_POLICY_SUSPENSION_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "PauseCircleOutlined"
       },
       {
         "name": "Policy Transfer",
@@ -810,7 +897,8 @@
         "path": "/policy-management/transfer",
         "description": "Transfer policy ownership",
         "permission": "PERM_POLICY_TRANSFER_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "SwapOutlined"
       },
       {
         "name": "Policy Upgrade",
@@ -818,7 +906,8 @@
         "path": "/policy-management/upgrade",
         "description": "Upgrade policy coverage",
         "permission": "PERM_POLICY_UPGRADE_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "ArrowUpOutlined"
       }
     ]
   },
@@ -826,7 +915,7 @@
     "name": "Premium Management",
     "code": "PREMIUM_MANAGEMENT",
     "path": "/premium-management",
-    "icon": "PaymentsIcon",
+    "icon": "DollarOutlined",
     "description": "Manage policy premiums and collections",
     "permission": "PERM_PREMIUM_MANAGEMENT_READ",
     "status": "ACTIVE",
@@ -837,7 +926,8 @@
         "path": "/premium-management",
         "description": "Premium workspace overview",
         "permission": "PERM_PREMIUM_MANAGEMENT_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "DollarOutlined"
       },
       {
         "name": "Installments",
@@ -845,7 +935,8 @@
         "path": "/premium-management/installments",
         "description": "Manage premium installments",
         "permission": "PERM_PREMIUM_INSTALLMENTS_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "CalendarOutlined"
       },
       {
         "name": "Outstanding Premium",
@@ -853,7 +944,8 @@
         "path": "/premium-management/outstanding",
         "description": "Monitor pending payments",
         "permission": "PERM_OUTSTANDING_PREMIUM_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "WarningOutlined"
       },
       {
         "name": "Premium Adjustment",
@@ -861,7 +953,8 @@
         "path": "/premium-management/adjust",
         "description": "Adjust policy premiums",
         "permission": "PERM_PREMIUM_ADJUSTMENT_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "EditOutlined"
       },
       {
         "name": "Premium Calculation",
@@ -869,7 +962,8 @@
         "path": "/premium-management/calc",
         "description": "Calculate policy premiums",
         "permission": "PERM_PREMIUM_CALCULATION_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "CalculatorOutlined"
       },
       {
         "name": "Premium Collection",
@@ -877,7 +971,8 @@
         "path": "/premium-management/collect",
         "description": "Collect premium payments",
         "permission": "PERM_PREMIUM_COLLECTION_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "WalletOutlined"
       },
       {
         "name": "Premium History",
@@ -885,7 +980,8 @@
         "path": "/premium-management/history",
         "description": "View premium payment history",
         "permission": "PERM_PREMIUM_HISTORY_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "HistoryOutlined"
       },
       {
         "name": "Premium Refund",
@@ -893,7 +989,8 @@
         "path": "/premium-management/refund",
         "description": "Process premium refunds",
         "permission": "PERM_PREMIUM_REFUND_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "TransactionOutlined"
       },
       {
         "name": "Premium Schedule",
@@ -901,7 +998,8 @@
         "path": "/premium-management/schedule",
         "description": "View payment schedules",
         "permission": "PERM_PREMIUM_SCHEDULE_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "CalendarOutlined"
       },
       {
         "name": "Premium Waiver",
@@ -909,7 +1007,8 @@
         "path": "/premium-management/waiver",
         "description": "Apply premium waivers",
         "permission": "PERM_PREMIUM_WAIVER_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "DisconnectOutlined"
       },
       {
         "name": "Statement of Account",
@@ -917,7 +1016,8 @@
         "path": "/premium-management/statement",
         "description": "Policy premium statement of account",
         "permission": "PERM_PREMIUM_HISTORY_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "ProfileOutlined"
       },
       {
         "name": "Day End",
@@ -925,7 +1025,8 @@
         "path": "/premium-management/day-end",
         "description": "Premium day-end cashier summary and jobs",
         "permission": "PERM_PREMIUM_MANAGEMENT_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "ClockCircleOutlined"
       }
     ]
   },
@@ -933,7 +1034,7 @@
     "name": "Product Management",
     "code": "PRODUCT_MANAGEMENT",
     "path": "/product-management",
-    "icon": "InventoryIcon",
+    "icon": "AppstoreOutlined",
     "description": "Manage insurance products, plans, coverages, and catalog rules",
     "permission": "PERM_PRODUCT_READ",
     "status": "ACTIVE",
@@ -944,7 +1045,8 @@
         "path": "/product-management",
         "description": "View all insurance products",
         "permission": "PERM_PRODUCT_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "AppstoreOutlined"
       },
       {
         "name": "New Product",
@@ -952,7 +1054,8 @@
         "path": "/product-management/new",
         "description": "Create a new insurance product",
         "permission": "PERM_PRODUCT_WRITE",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "AppstoreOutlined"
       },
       {
         "name": "Product Search",
@@ -960,7 +1063,8 @@
         "path": "/product-management/search",
         "description": "Search and filter insurance products",
         "permission": "PERM_PRODUCT_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "SearchOutlined"
       },
       {
         "name": "Plans",
@@ -968,7 +1072,8 @@
         "path": "/product-management/plans",
         "description": "Manage product plans and coverages",
         "permission": "PERM_PRODUCT_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "PartitionOutlined"
       },
       {
         "name": "New Plan",
@@ -976,7 +1081,8 @@
         "path": "/product-management/plans/new",
         "description": "Create a new plan under a product",
         "permission": "PERM_PRODUCT_WRITE",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "PartitionOutlined"
       },
       {
         "name": "Coverage Setup",
@@ -984,7 +1090,8 @@
         "path": "/product-management/coverages",
         "description": "Define coverage parameters",
         "permission": "PERM_PRODUCT_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "SafetyOutlined"
       },
       {
         "name": "Riders",
@@ -992,7 +1099,8 @@
         "path": "/product-management/riders",
         "description": "Manage additional riders",
         "permission": "PERM_PRODUCT_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "ThunderboltOutlined"
       },
       {
         "name": "Features",
@@ -1000,7 +1108,8 @@
         "path": "/product-management/features",
         "description": "Define product features",
         "permission": "PERM_PRODUCT_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "ToolOutlined"
       },
       {
         "name": "Product Benefits",
@@ -1008,7 +1117,8 @@
         "path": "/product-management/benefits",
         "description": "Define product benefits",
         "permission": "PERM_PRODUCT_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "GiftOutlined"
       },
       {
         "name": "Exclusions",
@@ -1016,7 +1126,8 @@
         "path": "/product-management/exclusions",
         "description": "Manage product exclusions",
         "permission": "PERM_PRODUCT_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "StopOutlined"
       },
       {
         "name": "Categories",
@@ -1024,7 +1135,8 @@
         "path": "/product-management/categories",
         "description": "Categorize insurance products",
         "permission": "PERM_PRODUCT_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "TagsOutlined"
       },
       {
         "name": "Eligibility Rules",
@@ -1032,7 +1144,8 @@
         "path": "/product-management/eligibility",
         "description": "Product eligibility conditions",
         "permission": "PERM_PRODUCT_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "CheckCircleOutlined"
       },
       {
         "name": "Rating Rules",
@@ -1040,7 +1153,8 @@
         "path": "/product-management/rating-rules",
         "description": "Catalog pricing and rating factors",
         "permission": "PERM_PRODUCT_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "CalculatorOutlined"
       },
       {
         "name": "Channel Mapping",
@@ -1048,7 +1162,8 @@
         "path": "/product-management/channels",
         "description": "Enable sales channels per product",
         "permission": "PERM_PRODUCT_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "ShareAltOutlined"
       },
       {
         "name": "Documents",
@@ -1056,7 +1171,8 @@
         "path": "/product-management/documents",
         "description": "Product collateral and documents",
         "permission": "PERM_PRODUCT_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "FileTextOutlined"
       },
       {
         "name": "Versions",
@@ -1064,7 +1180,8 @@
         "path": "/product-management/versions",
         "description": "Manage product versioning",
         "permission": "PERM_PRODUCT_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "HistoryOutlined"
       },
       {
         "name": "Premium Calculation Rules",
@@ -1072,7 +1189,8 @@
         "path": "/product-management/prem-rules",
         "description": "Define premium calculation logic",
         "permission": "PERM_PREMIUM_CALC_RULES_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "CalculatorOutlined"
       }
     ]
   },
@@ -1080,7 +1198,7 @@
     "name": "Reinsurance",
     "code": "REINSURANCE",
     "path": "/reinsurance",
-    "icon": "AssuredWorkloadIcon",
+    "icon": "InsuranceOutlined",
     "description": "Manage reinsurance treaties and placements",
     "permission": "PERM_REINSURANCE_READ",
     "status": "ACTIVE",
@@ -1091,7 +1209,8 @@
         "path": "/reinsurance/claim-share",
         "description": "Calculate claim sharing",
         "permission": "PERM_REINSURANCE_CLAIM_SHARING_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "ShareAltOutlined"
       },
       {
         "name": "Facultative Insurance",
@@ -1099,7 +1218,8 @@
         "path": "/reinsurance/facultative",
         "description": "Manage facultative placements",
         "permission": "PERM_FACULTATIVE_INSURANCE_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "InsuranceOutlined"
       },
       {
         "name": "Premium Sharing",
@@ -1107,7 +1227,8 @@
         "path": "/reinsurance/prem-share",
         "description": "Calculate premium sharing",
         "permission": "PERM_REINSURANCE_PREMIUM_SHARING_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "PercentageOutlined"
       },
       {
         "name": "Reinsurance Companies",
@@ -1115,7 +1236,8 @@
         "path": "/reinsurance/companies",
         "description": "Manage reinsurer profiles",
         "permission": "PERM_REINSURANCE_COMPANIES_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "BankOutlined"
       },
       {
         "name": "Reinsurance Reports",
@@ -1123,7 +1245,8 @@
         "path": "/reinsurance/reports",
         "description": "View reinsurance reports",
         "permission": "PERM_REINSURANCE_REPORTS_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "PieChartOutlined"
       },
       {
         "name": "Settlement",
@@ -1131,7 +1254,8 @@
         "path": "/reinsurance/settlement",
         "description": "Process reinsurance settlements",
         "permission": "PERM_REINSURANCE_SETTLEMENT_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "ReconciliationOutlined"
       },
       {
         "name": "Treaty Management",
@@ -1139,7 +1263,8 @@
         "path": "/reinsurance/treaties",
         "description": "Manage reinsurance treaties",
         "permission": "PERM_TREATY_MANAGEMENT_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "FileProtectOutlined"
       }
     ]
   },
@@ -1147,7 +1272,7 @@
     "name": "System Config",
     "code": "SYSTEM_CONFIG",
     "path": "/config",
-    "icon": "SettingsIcon",
+    "icon": "SettingOutlined",
     "description": "System configuration and setup",
     "permission": "PERM_SYSTEM_CONFIG_READ",
     "status": "ACTIVE",
@@ -1159,7 +1284,8 @@
         "path": "/config/application-codes",
         "description": "Manage application error and success codes",
         "permission": "PERM_APPLICATION_CODE_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "ControlOutlined"
       },
       {
         "name": "Branches",
@@ -1167,7 +1293,8 @@
         "path": "config/branches",
         "description": "Manage branch offices",
         "permission": "PERM_BRANCHES_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "BankOutlined"
       },
       {
         "name": "Company Profile",
@@ -1175,7 +1302,8 @@
         "path": "config/company",
         "description": "Manage company details",
         "permission": "PERM_COMPANY_PROFILE_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "HomeOutlined"
       },
       {
         "name": "Data Masking",
@@ -1183,7 +1311,8 @@
         "path": "/config/data-masking",
         "description": "Manage data masking rules for audit and access logs",
         "permission": "PERM_DATA_MASKING_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "EyeInvisibleOutlined"
       },
       {
         "name": "Master Data",
@@ -1191,7 +1320,8 @@
         "path": "/config/master",
         "description": "Countries, Provinces, Regions",
         "permission": "PERM_MASTER_DATA_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "DatabaseOutlined"
       }
     ]
   },
@@ -1199,7 +1329,7 @@
     "name": "Underwriting",
     "code": "UNDERWRITING",
     "path": "/underwriting",
-    "icon": "FactCheckIcon",
+    "icon": "CheckSquareOutlined",
     "description": "Risk assessment and underwriting workflow",
     "permission": "PERM_UNDERWRITING_READ",
     "status": "ACTIVE",
@@ -1210,7 +1340,8 @@
         "path": "/underwriting/approval",
         "description": "Multi-level approval workflow",
         "permission": "PERM_UNDERWRITING_APPROVAL_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "CheckSquareOutlined"
       },
       {
         "name": "Medical Assessment",
@@ -1218,7 +1349,8 @@
         "path": "/underwriting/medical",
         "description": "Review medical reports",
         "permission": "PERM_MEDICAL_ASSESSMENT_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "MedicineBoxOutlined"
       },
       {
         "name": "Property Inspection",
@@ -1226,7 +1358,8 @@
         "path": "/underwriting/property-insp",
         "description": "Property inspection reports",
         "permission": "PERM_PROPERTY_INSPECTION_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "HomeOutlined"
       },
       {
         "name": "Reinsurance Review",
@@ -1234,7 +1367,8 @@
         "path": "/underwriting/re-review",
         "description": "Review for reinsurance requirements",
         "permission": "PERM_REINSURANCE_REVIEW_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "InsuranceOutlined"
       },
       {
         "name": "Risk Assessment",
@@ -1242,7 +1376,8 @@
         "path": "/underwriting/risk-assessment",
         "description": "Perform risk assessment",
         "permission": "PERM_RISK_ASSESSMENT_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "WarningOutlined"
       },
       {
         "name": "Risk Score",
@@ -1250,7 +1385,8 @@
         "path": "/underwriting/risk-score",
         "description": "Analyze risk scores",
         "permission": "PERM_RISK_SCORE_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "BarChartOutlined"
       },
       {
         "name": "Survey Reports",
@@ -1258,7 +1394,8 @@
         "path": "/underwriting/surveys",
         "description": "Review survey reports",
         "permission": "PERM_SURVEY_REPORTS_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "FileTextOutlined"
       },
       {
         "name": "Underwriter Decision",
@@ -1266,7 +1403,8 @@
         "path": "/underwriting/decision",
         "description": "Final underwriter decision",
         "permission": "PERM_UNDERWRITER_DECISION_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "CheckCircleOutlined"
       },
       {
         "name": "Underwriting Queue",
@@ -1274,7 +1412,8 @@
         "path": "/underwriting/queue",
         "description": "View pending applications",
         "permission": "PERM_UNDERWRITING_QUEUE_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "ProfileOutlined"
       },
       {
         "name": "Vehicle Inspection",
@@ -1282,7 +1421,8 @@
         "path": "/underwriting/vehicle-insp",
         "description": "Vehicle inspection reports",
         "permission": "PERM_VEHICLE_INSPECTION_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "CarOutlined"
       }
     ]
   },
@@ -1290,7 +1430,7 @@
     "name": "User Management",
     "code": "USER_MANAGEMENT",
     "path": "/user-management",
-    "icon": "UserIcon",
+    "icon": "SafetyOutlined",
     "description": "Manage users, roles and permissions",
     "permission": "PERM_USER_MANAGEMENT_ADMIN",
     "status": "ACTIVE",
@@ -1302,7 +1442,8 @@
         "path": "/user-management/access-logs",
         "description": "View access and login logs",
         "permission": "PERM_ACCESS_LOGS_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "FileSearchOutlined"
       },
       {
         "name": "API Clients",
@@ -1310,7 +1451,8 @@
         "path": "/user-management/api-clients",
         "description": "Manage API access clients",
         "permission": "PERM_API_CLIENTS_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "ApiOutlined"
       },
       {
         "name": "Audit Logs",
@@ -1318,7 +1460,8 @@
         "path": "/user-management/audit-logs",
         "description": "View system audit logs",
         "permission": "PERM_AUDIT_LOGS_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "AuditOutlined"
       },
       {
         "name": "Authentication Settings",
@@ -1326,7 +1469,8 @@
         "path": "/user-management/auth-settings",
         "description": "Authentication configuration",
         "permission": "PERM_AUTH_SETTINGS_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "LockOutlined"
       },
       {
         "name": "Groups",
@@ -1334,7 +1478,8 @@
         "path": "/user-management/groups",
         "description": "User group management",
         "permission": "PERM_USER_GROUPS_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "GroupOutlined"
       },
       {
         "name": "Multi-Factor Authentication",
@@ -1342,7 +1487,8 @@
         "path": "/user-management/mfa",
         "description": "Manage MFA settings",
         "permission": "PERM_MFA_SETTINGS_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "SafetyCertificateOutlined"
       },
       {
         "name": "Password Policy",
@@ -1350,7 +1496,8 @@
         "path": "/user-management/password-policy",
         "description": "Configure password security rules",
         "permission": "PERM_PASSWORD_POLICY_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "KeyOutlined"
       },
       {
         "name": "Roles",
@@ -1358,7 +1505,8 @@
         "path": "/user-management/roles",
         "description": "Role management",
         "permission": "PERM_ROLES_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "IdcardOutlined"
       },
       {
         "name": "Session Monitoring",
@@ -1366,7 +1514,8 @@
         "path": "/user-management/sessions",
         "description": "Monitor active user sessions",
         "permission": "PERM_SESSION_MONITORING_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "ClockCircleOutlined"
       },
       {
         "name": "Users",
@@ -1374,7 +1523,8 @@
         "path": "/user-management/users",
         "description": "User list and registration",
         "permission": "PERM_USERS_READ",
-        "status": "ACTIVE"
+        "status": "ACTIVE",
+        "icon": "UserOutlined"
       }
     ]
   }
