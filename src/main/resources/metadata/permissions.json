@@ -504,6 +504,76 @@
     "checkerMakerEnabled": false
   },
   {
+    "name": "Read Application Code",
+    "code": "PERM_APPLICATION_CODE_READ",
+    "description": "View application error and success codes",
+    "uiAccessPath": "APPLICATION_CODE",
+    "checkerMakerEnabled": false
+  },
+  {
+    "name": "Write Application Code",
+    "code": "PERM_APPLICATION_CODE_WRITE",
+    "description": "Create application error and success codes",
+    "uiAccessPath": "APPLICATION_CODE",
+    "checkerMakerEnabled": false
+  },
+  {
+    "name": "Update Application Code",
+    "code": "PERM_APPLICATION_CODE_UPDATE",
+    "description": "Update application error and success codes",
+    "uiAccessPath": "APPLICATION_CODE",
+    "checkerMakerEnabled": false
+  },
+  {
+    "name": "Delete Application Code",
+    "code": "PERM_APPLICATION_CODE_DELETE",
+    "description": "Delete application error and success codes",
+    "uiAccessPath": "APPLICATION_CODE",
+    "checkerMakerEnabled": false
+  },
+  {
+    "name": "Admin Application Code",
+    "code": "PERM_APPLICATION_CODE_ADMIN",
+    "description": "Full access to application code management",
+    "uiAccessPath": "APPLICATION_CODE",
+    "checkerMakerEnabled": false
+  },
+  {
+    "name": "Read Data Masking",
+    "code": "PERM_DATA_MASKING_READ",
+    "description": "View data masking rules",
+    "uiAccessPath": "DATA_MASKING",
+    "checkerMakerEnabled": false
+  },
+  {
+    "name": "Write Data Masking",
+    "code": "PERM_DATA_MASKING_WRITE",
+    "description": "Create data masking rules",
+    "uiAccessPath": "DATA_MASKING",
+    "checkerMakerEnabled": false
+  },
+  {
+    "name": "Update Data Masking",
+    "code": "PERM_DATA_MASKING_UPDATE",
+    "description": "Update data masking rules",
+    "uiAccessPath": "DATA_MASKING",
+    "checkerMakerEnabled": false
+  },
+  {
+    "name": "Delete Data Masking",
+    "code": "PERM_DATA_MASKING_DELETE",
+    "description": "Delete data masking rules",
+    "uiAccessPath": "DATA_MASKING",
+    "checkerMakerEnabled": false
+  },
+  {
+    "name": "Admin Data Masking",
+    "code": "PERM_DATA_MASKING_ADMIN",
+    "description": "Full access to data masking management",
+    "uiAccessPath": "DATA_MASKING",
+    "checkerMakerEnabled": false
+  },
+  {
     "name": "Read Password Policy",
     "code": "PERM_PASSWORD_POLICY_READ",
     "description": "View password policy settings",
@@ -620,6 +690,20 @@
     "code": "PERM_CORPORATE_CUSTOMERS_WRITE",
     "description": "Manage corporate customers",
     "uiAccessPath": "CORPORATE_CUSTOMERS",
+    "checkerMakerEnabled": true
+  },
+  {
+    "name": "Read Government Customers",
+    "code": "PERM_GOVERNMENT_CUSTOMERS_READ",
+    "description": "View government customers",
+    "uiAccessPath": "GOVERNMENT_CUSTOMERS",
+    "checkerMakerEnabled": false
+  },
+  {
+    "name": "Write Government Customers",
+    "code": "PERM_GOVERNMENT_CUSTOMERS_WRITE",
+    "description": "Manage government customers",
+    "uiAccessPath": "GOVERNMENT_CUSTOMERS",
     "checkerMakerEnabled": true
   },
   {
@@ -826,6 +910,41 @@
     "checkerMakerEnabled": true
   },
   {
+    "name": "Read Commission Management",
+    "code": "PERM_COMMISSION_MANAGEMENT_READ",
+    "description": "Access commission management menu",
+    "uiAccessPath": "COMMISSION_MANAGEMENT",
+    "checkerMakerEnabled": false
+  },
+  {
+    "name": "Write Commission Management",
+    "code": "PERM_COMMISSION_MANAGEMENT_WRITE",
+    "description": "Manage commission management",
+    "uiAccessPath": "COMMISSION_MANAGEMENT",
+    "checkerMakerEnabled": true
+  },
+  {
+    "name": "Update Commission Management",
+    "code": "PERM_COMMISSION_MANAGEMENT_UPDATE",
+    "description": "Update commission management",
+    "uiAccessPath": "COMMISSION_MANAGEMENT",
+    "checkerMakerEnabled": true
+  },
+  {
+    "name": "Delete Commission Management",
+    "code": "PERM_COMMISSION_MANAGEMENT_DELETE",
+    "description": "Delete commission management",
+    "uiAccessPath": "COMMISSION_MANAGEMENT",
+    "checkerMakerEnabled": true
+  },
+  {
+    "name": "Admin Commission Management",
+    "code": "PERM_COMMISSION_MANAGEMENT_ADMIN",
+    "description": "Full admin access to commission management",
+    "uiAccessPath": "COMMISSION_MANAGEMENT",
+    "checkerMakerEnabled": false
+  },
+  {
     "name": "Read Commission Setup",
     "code": "PERM_COMMISSION_SETUP_READ",
     "description": "View commission setup",
@@ -987,6 +1106,48 @@
     "checkerMakerEnabled": true
   },
   {
+    "name": "Read Product Eligibility Rules",
+    "code": "PERM_PRODUCT_ELIGIBILITY_READ",
+    "description": "View product eligibility rules",
+    "uiAccessPath": "PRODUCT_ELIGIBILITY",
+    "checkerMakerEnabled": false
+  },
+  {
+    "name": "Write Product Eligibility Rules",
+    "code": "PERM_PRODUCT_ELIGIBILITY_WRITE",
+    "description": "Manage product eligibility rules",
+    "uiAccessPath": "PRODUCT_ELIGIBILITY",
+    "checkerMakerEnabled": true
+  },
+  {
+    "name": "Read Product Rating Rules",
+    "code": "PERM_PRODUCT_RATING_RULES_READ",
+    "description": "View product catalog rating rules",
+    "uiAccessPath": "PRODUCT_RATING_RULES",
+    "checkerMakerEnabled": false
+  },
+  {
+    "name": "Write Product Rating Rules",
+    "code": "PERM_PRODUCT_RATING_RULES_WRITE",
+    "description": "Manage product catalog rating rules",
+    "uiAccessPath": "PRODUCT_RATING_RULES",
+    "checkerMakerEnabled": true
+  },
+  {
+    "name": "Read Product Channel Mapping",
+    "code": "PERM_PRODUCT_CHANNELS_READ",
+    "description": "View product channel mappings",
+    "uiAccessPath": "PRODUCT_CHANNELS",
+    "checkerMakerEnabled": false
+  },
+  {
+    "name": "Write Product Channel Mapping",
+    "code": "PERM_PRODUCT_CHANNELS_WRITE",
+    "description": "Manage product channel mappings",
+    "uiAccessPath": "PRODUCT_CHANNELS",
+    "checkerMakerEnabled": true
+  },
+  {
     "name": "Read Coverage Setup",
     "code": "PERM_COVERAGE_SETUP_READ",
     "description": "View coverage setup",
@@ -1055,6 +1216,27 @@
     "description": "Access policy management module",
     "uiAccessPath": "POLICY_MANAGEMENT",
     "checkerMakerEnabled": false
+  },
+  {
+    "name": "Read Policy",
+    "code": "PERM_POLICY_READ",
+    "description": "View and search policies (broad controller-level permission)",
+    "uiAccessPath": "POLICY_MANAGEMENT",
+    "checkerMakerEnabled": false
+  },
+  {
+    "name": "Write Policy",
+    "code": "PERM_POLICY_WRITE",
+    "description": "Create and update policies (broad controller-level permission)",
+    "uiAccessPath": "POLICY_MANAGEMENT",
+    "checkerMakerEnabled": true
+  },
+  {
+    "name": "Admin Policy",
+    "code": "PERM_POLICY_ADMIN",
+    "description": "Delete and approve policy operations (broad controller-level permission)",
+    "uiAccessPath": "POLICY_MANAGEMENT",
+    "checkerMakerEnabled": true
   },
   {
     "name": "Read New Policy",
@@ -2356,6 +2538,41 @@
     "code": "PERM_CORPORATE_CUSTOMERS_MAKER",
     "description": "Initiate corporate customers",
     "uiAccessPath": "CORPORATE_CUSTOMERS",
+    "checkerMakerEnabled": false
+  },
+  {
+    "name": "Update Government Customers",
+    "code": "PERM_GOVERNMENT_CUSTOMERS_UPDATE",
+    "description": "Update government customers",
+    "uiAccessPath": "GOVERNMENT_CUSTOMERS",
+    "checkerMakerEnabled": true
+  },
+  {
+    "name": "Delete Government Customers",
+    "code": "PERM_GOVERNMENT_CUSTOMERS_DELETE",
+    "description": "Delete government customers",
+    "uiAccessPath": "GOVERNMENT_CUSTOMERS",
+    "checkerMakerEnabled": true
+  },
+  {
+    "name": "Admin Government Customers",
+    "code": "PERM_GOVERNMENT_CUSTOMERS_ADMIN",
+    "description": "Full admin access to government customers",
+    "uiAccessPath": "GOVERNMENT_CUSTOMERS",
+    "checkerMakerEnabled": true
+  },
+  {
+    "name": "Checker Government Customers",
+    "code": "PERM_GOVERNMENT_CUSTOMERS_CHECKER",
+    "description": "Check/approve government customers",
+    "uiAccessPath": "GOVERNMENT_CUSTOMERS",
+    "checkerMakerEnabled": false
+  },
+  {
+    "name": "Maker Government Customers",
+    "code": "PERM_GOVERNMENT_CUSTOMERS_MAKER",
+    "description": "Initiate government customers",
+    "uiAccessPath": "GOVERNMENT_CUSTOMERS",
     "checkerMakerEnabled": false
   },
   {
@@ -6578,5 +6795,61 @@
     "description": "Initiate reinsurance reports",
     "uiAccessPath": "REINSURANCE_REPORTS",
     "checkerMakerEnabled": false
+  },
+  {
+    "name": "Read Agent",
+    "code": "PERM_AGENT_READ",
+    "description": "View agent profiles and list",
+    "uiAccessPath": "AGENT_REGISTRATION",
+    "checkerMakerEnabled": false
+  },
+  {
+    "name": "Write Agent",
+    "code": "PERM_AGENT_WRITE",
+    "description": "Register new agents",
+    "uiAccessPath": "AGENT_REGISTRATION",
+    "checkerMakerEnabled": true
+  },
+  {
+    "name": "Update Agent",
+    "code": "PERM_AGENT_UPDATE",
+    "description": "Update agent profiles",
+    "uiAccessPath": "AGENT_REGISTRATION",
+    "checkerMakerEnabled": true
+  },
+  {
+    "name": "Delete Agent",
+    "code": "PERM_AGENT_DELETE",
+    "description": "Delete or de-register agents",
+    "uiAccessPath": "AGENT_REGISTRATION",
+    "checkerMakerEnabled": true
+  },
+  {
+    "name": "Activate Agent",
+    "code": "PERM_AGENT_ACTIVATE",
+    "description": "Activate or suspend agents",
+    "uiAccessPath": "AGENT_REGISTRATION",
+    "checkerMakerEnabled": true
+  },
+  {
+    "name": "Read Product",
+    "code": "PERM_PRODUCT_READ",
+    "description": "View product management data",
+    "uiAccessPath": "PRODUCT_MANAGEMENT",
+    "checkerMakerEnabled": false
+  },
+  {
+    "name": "Write Product",
+    "code": "PERM_PRODUCT_WRITE",
+    "description": "Create and update products, plans, and coverages",
+    "uiAccessPath": "PRODUCT_MANAGEMENT",
+    "checkerMakerEnabled": true
+  },
+  {
+    "name": "Admin Product",
+    "code": "PERM_PRODUCT_ADMIN",
+    "description": "Full admin access to product management",
+    "uiAccessPath": "PRODUCT_MANAGEMENT",
+    "checkerMakerEnabled": true
   }
 ]
