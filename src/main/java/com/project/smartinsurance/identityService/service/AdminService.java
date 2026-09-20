@@ -3,9 +3,12 @@ package com.project.smartinsurance.identityService.service;
 import com.project.smartinsurance.applicationConfig.model.BranchEntity;
 import com.project.smartinsurance.applicationConfig.repository.BranchRepository;
 import com.project.smartinsurance.commonService.exception.GlobalException;
+import com.project.smartinsurance.commonService.model.UserSession;
+import com.project.smartinsurance.commonService.service.UserSessionService;
 import com.project.smartinsurance.identityService.config.JwtService;
 import com.project.smartinsurance.identityService.dto.UpdateUserRequest;
-import com.project.smartinsurance.identityService.model.Role;
+import com.project.smartinsurance.identityService.dto.UserDto;
+import com.project.smartinsurance.identityService.mapper.UserMapper;
 import com.project.smartinsurance.identityService.model.TokenBlacklist;
 import com.project.smartinsurance.identityService.model.User;
 import com.project.smartinsurance.identityService.model.UserGroup;
@@ -18,12 +21,8 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.project.smartinsurance.identityService.dto.UserDto;
-import com.project.smartinsurance.identityService.mapper.UserMapper;
 import java.time.Instant;
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
 import java.util.UUID;
 
 @Service
@@ -38,6 +37,7 @@ public class AdminService {
     private final PasswordEncoder passwordEncoder;
     private final JwtService jwtService;
     private final UserMapper userMapper;
+    private final UserSessionService userSessionService;
 
     public List<UserDto> getAllUsers() {
         return userRepository.findByUsernameNot("superadmin").stream()
@@ -96,20 +96,12 @@ public class AdminService {
     public void forceLogout(UUID userId) {
         User user = userRepository.findById(userId)
                 .orElseThrow(() -> new GlobalException("USR-001"));
-        refreshTokenRepository.deleteByUser(user);
+        invalidateUserAuth(user);
     }
 
     @Transactional
     public void blacklistToken(String token) {
-        if (tokenBlacklistRepository.existsByToken(token)) {
-            return;
-        }
-        Instant expiryDate = jwtService.extractClaim(token, claims -> claims.getExpiration().toInstant());
-        TokenBlacklist blacklist = TokenBlacklist.builder()
-                .token(token)
-                .expiryDate(expiryDate)
-                .build();
-        tokenBlacklistRepository.save(blacklist);
+        addToBlacklist(token);
     }
 
     @Transactional
@@ -119,6 +111,40 @@ public class AdminService {
         user.setPassword(passwordEncoder.encode(newPassword));
         user.setForcePasswordChange(true);
         userRepository.save(user);
+        invalidateUserAuth(user);
+    }
+
+    /** Blacklist active access tokens, end sessions, and remove refresh tokens. */
+    private void invalidateUserAuth(User user) {
+        List<UserSession> sessions = userSessionService.findByUsernameAndActiveTrue(user.getUsername());
+        for (UserSession session : sessions) {
+            if (session.getToken() != null && !session.getToken().isBlank()) {
+                addToBlacklist(session.getToken());
+                userSessionService.endSession(session.getToken());
+            }
+        }
+        // End any active rows that had no token stored
+        for (UserSession session : userSessionService.findByUsernameAndActiveTrue(user.getUsername())) {
+            if (session.getId() != null) {
+                userSessionService.forceEndSession(session.getId());
+            }
+        }
         refreshTokenRepository.deleteByUser(user);
+    }
+
+    private void addToBlacklist(String token) {
+        if (token == null || token.isBlank() || tokenBlacklistRepository.existsByToken(token)) {
+            return;
+        }
+        try {
+            Instant expiryDate = jwtService.extractClaim(token, claims -> claims.getExpiration().toInstant());
+            TokenBlacklist blacklist = TokenBlacklist.builder()
+                    .token(token)
+                    .expiryDate(expiryDate)
+                    .build();
+            tokenBlacklistRepository.save(blacklist);
+        } catch (Exception ignored) {
+            // Token may already be expired/malformed; still drop refresh below.
+        }
     }
 }

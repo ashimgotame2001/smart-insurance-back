@@ -7,6 +7,7 @@ import com.project.smartinsurance.applicationConfig.repository.CompanyProfileRep
 import com.project.smartinsurance.applicationConfig.service.MenuService;
 import com.project.smartinsurance.commonService.exception.GlobalException;
 import com.project.smartinsurance.identityService.config.JwtService;
+import io.jsonwebtoken.JwtException;
 import com.project.smartinsurance.identityService.dto.AuthenticationRequest;
 import com.project.smartinsurance.identityService.dto.AuthenticationResponse;
 import com.project.smartinsurance.identityService.dto.AuthSettingsDto;
@@ -67,7 +68,6 @@ public class AuthenticationService {
     private final MfaService mfaService;
     private final AuthSettingsService authSettingsService;
     private final com.project.smartinsurance.commonService.service.UserSessionService userSessionService;
-    private final com.project.smartinsurance.commonService.service.AuditLogService auditLogService;
     private final com.project.smartinsurance.commonService.service.AccessLogService accessLogService;
 
     @Value("${application.security.jwt.refresh-token.expiration}")
@@ -197,11 +197,13 @@ public class AuthenticationService {
 
         validateAccessPolicy(user);
 
-        // Enforce max concurrent sessions
+        // Enforce max concurrent sessions — evict oldest if limit exceeded
         int maxSessions = settings.getMaxConcurrentSessions() != null ? settings.getMaxConcurrentSessions() : 3;
         var activeSessions = userSessionService.findByUsernameAndActiveTrue(user.getUsername());
-        if (activeSessions.size() >= maxSessions) {
-            throw new GlobalException("AUTH-013");
+        while (activeSessions.size() >= maxSessions) {
+            activeSessions.sort((a, b) -> a.getLoginTime().compareTo(b.getLoginTime()));
+            userSessionService.forceEndSession(activeSessions.getFirst().getId());
+            activeSessions = userSessionService.findByUsernameAndActiveTrue(user.getUsername());
         }
 
         Optional<MfaPolicy> policyOpt = mfaService.getApplicablePolicy(user);
@@ -304,7 +306,7 @@ public class AuthenticationService {
                 ? settings.getRefreshTokenExpiryDays() * 86_400_000L : refreshExpiration;
 
         String jwtToken = jwtService.generateToken(extraClaims, userDetails, tokenExpiryMs);
-        String refreshToken = createRefreshToken(user, refreshExpiryMs);
+        String refreshToken = createRefreshToken(user, userDetails, refreshExpiryMs);
 
         String groupName = user.getUserGroup() != null ? user.getUserGroup().getName() : null;
 
@@ -354,6 +356,15 @@ public class AuthenticationService {
                 .map(this::verifyExpiration)
                 .map(RefreshToken::getUser)
                 .map(user -> {
+                    try {
+                        String tokenUsername = jwtService.extractUsername(requestRefreshToken);
+                        if (!user.getUsername().equals(tokenUsername)) {
+                            throw new GlobalException("AUTH-007");
+                        }
+                    } catch (JwtException e) {
+                        throw new GlobalException("AUTH-007");
+                    }
+
                     UserDetails userDetails = userDetailsService.loadUserByUsername(user.getUsername());
 
                     Map<String, Object> extraClaims = new HashMap<>();
@@ -403,14 +414,17 @@ public class AuthenticationService {
 
     public void logout(String token) {
         Instant expiryDate = jwtService.extractClaim(token, claims -> claims.getExpiration().toInstant());
-        TokenBlacklist blacklist = TokenBlacklist.builder()
-                .token(token)
-                .expiryDate(expiryDate)
-                .build();
-        tokenBlacklistRepository.save(blacklist);
+        if (!tokenBlacklistRepository.existsByToken(token)) {
+            TokenBlacklist blacklist = TokenBlacklist.builder()
+                    .token(token)
+                    .expiryDate(expiryDate)
+                    .build();
+            tokenBlacklistRepository.save(blacklist);
+        }
         try {
             userSessionService.endSession(token);
             String username = jwtService.extractUsername(token);
+            userRepository.findByUsername(username).ifPresent(refreshTokenRepository::deleteByUser);
             accessLogService.log(username, "LOGOUT", null, null, "Logout successful", true);
         } catch (Exception ignored) {}
     }
@@ -431,13 +445,15 @@ public class AuthenticationService {
         userRepository.save(user);
     }
 
-    private String createRefreshToken(User user, long expiryMs) {
+    private String createRefreshToken(User user, UserDetails userDetails, long expiryMs) {
         refreshTokenRepository.deleteByUser(user);
         refreshTokenRepository.flush();
 
+        String jwtToken = jwtService.generateRefreshToken(userDetails, expiryMs);
+
         RefreshToken refreshToken = RefreshToken.builder()
                 .user(user)
-                .token(UUID.randomUUID().toString())
+                .token(jwtToken)
                 .expiryDate(Instant.now().plusMillis(expiryMs))
                 .build();
 

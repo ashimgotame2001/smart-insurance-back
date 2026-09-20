@@ -182,6 +182,20 @@
     "checkerMakerEnabled": true
   },
   {
+    "name": "Force Logout Users",
+    "code": "PERM_USERS_FORCE_LOGOUT",
+    "description": "Force logout a user and invalidate their sessions",
+    "uiAccessPath": "USERS",
+    "checkerMakerEnabled": false
+  },
+  {
+    "name": "Reset User Password",
+    "code": "PERM_USERS_RESET_PASSWORD",
+    "description": "Reset a user password and force password change on next login",
+    "uiAccessPath": "USERS",
+    "checkerMakerEnabled": false
+  },
+  {
     "name": "Delete Users",
     "code": "PERM_USERS_DELETE",
     "description": "Delete users",
