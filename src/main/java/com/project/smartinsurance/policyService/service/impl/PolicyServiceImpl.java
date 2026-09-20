@@ -42,7 +42,9 @@ public class PolicyServiceImpl implements PolicyService {
     @Override
     @Transactional
     public PolicyDto createPolicy(PolicyCreateRequest request) {
-        validateProductAndPlan(request.getProductCode(), request.getPlanCode(), true);
+        // Draft policies may reference catalog products that are not yet ACTIVE;
+        // issuePolicy still requires an ACTIVE product.
+        validateProductAndPlan(request.getProductCode(), request.getPlanCode(), false);
 
         String policyNumber = generatePolicyNumber();
 
@@ -619,8 +621,8 @@ public class PolicyServiceImpl implements PolicyService {
     }
 
     /**
-     * Resolves product/plan against the live catalog. When requireActive is true (create/issue),
-     * product must be ACTIVE; otherwise product must exist (edit may keep suspended product codes).
+     * Resolves product/plan against the live catalog. When requireActive is true (issue),
+     * product must be ACTIVE; otherwise product must exist (create/edit may use draft products).
      */
     private void validateProductAndPlan(String productCode, String planCode, boolean requireActive) {
         if (productCode == null || productCode.isBlank()) {

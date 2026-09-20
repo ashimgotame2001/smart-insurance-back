@@ -196,6 +196,13 @@
     "checkerMakerEnabled": false
   },
   {
+    "name": "Lock Users",
+    "code": "PERM_USERS_LOCK",
+    "description": "Lock or unlock user accounts",
+    "uiAccessPath": "USERS",
+    "checkerMakerEnabled": false
+  },
+  {
     "name": "Delete Users",
     "code": "PERM_USERS_DELETE",
     "description": "Delete users",
@@ -1251,6 +1258,13 @@
     "description": "Delete and approve policy operations (broad controller-level permission)",
     "uiAccessPath": "POLICY_MANAGEMENT",
     "checkerMakerEnabled": true
+  },
+  {
+    "name": "Read Policies",
+    "code": "PERM_POLICIES_READ",
+    "description": "View the list of available policies",
+    "uiAccessPath": "POLICIES",
+    "checkerMakerEnabled": false
   },
   {
     "name": "Read New Policy",
@@ -3917,6 +3931,48 @@
     "code": "PERM_POLICY_MANAGEMENT_MAKER",
     "description": "Initiate policy management",
     "uiAccessPath": "POLICY_MANAGEMENT",
+    "checkerMakerEnabled": false
+  },
+  {
+    "name": "Write Policies",
+    "code": "PERM_POLICIES_WRITE",
+    "description": "Manage the policies list",
+    "uiAccessPath": "POLICIES",
+    "checkerMakerEnabled": true
+  },
+  {
+    "name": "Update Policies",
+    "code": "PERM_POLICIES_UPDATE",
+    "description": "Update policies list access",
+    "uiAccessPath": "POLICIES",
+    "checkerMakerEnabled": true
+  },
+  {
+    "name": "Delete Policies",
+    "code": "PERM_POLICIES_DELETE",
+    "description": "Delete policies list access",
+    "uiAccessPath": "POLICIES",
+    "checkerMakerEnabled": true
+  },
+  {
+    "name": "Admin Policies",
+    "code": "PERM_POLICIES_ADMIN",
+    "description": "Full admin access to the policies list",
+    "uiAccessPath": "POLICIES",
+    "checkerMakerEnabled": true
+  },
+  {
+    "name": "Checker Policies",
+    "code": "PERM_POLICIES_CHECKER",
+    "description": "Check/approve policies list access",
+    "uiAccessPath": "POLICIES",
+    "checkerMakerEnabled": false
+  },
+  {
+    "name": "Maker Policies",
+    "code": "PERM_POLICIES_MAKER",
+    "description": "Initiate policies list access",
+    "uiAccessPath": "POLICIES",
     "checkerMakerEnabled": false
   },
   {

@@ -802,6 +802,15 @@
     "status": "ACTIVE",
     "subMenus": [
       {
+        "name": "Policies",
+        "code": "POLICIES",
+        "path": "/policy-management",
+        "description": "View all available policies",
+        "permission": "PERM_POLICIES_READ",
+        "status": "ACTIVE",
+        "icon": "UnorderedListOutlined"
+      },
+      {
         "name": "New Policy",
         "code": "NEW_POLICY",
         "path": "/policy-management/new",
