@@ -51,6 +51,17 @@ public class ProductServiceImpl implements ProductService {
         return category.getCode();
     }
 
+    private LineOfBusiness parseLineOfBusiness(String lineOfBusiness) {
+        if (lineOfBusiness == null || lineOfBusiness.isBlank()) {
+            return null;
+        }
+        try {
+            return LineOfBusiness.valueOf(lineOfBusiness.trim());
+        } catch (IllegalArgumentException ex) {
+            throw new GlobalException("PRD-018", lineOfBusiness.trim());
+        }
+    }
+
     @Override
     @Transactional
     public ProductDto createProduct(ProductCreateRequest request) {
@@ -63,7 +74,7 @@ public class ProductServiceImpl implements ProductService {
                 .name(request.getName())
                 .description(request.getDescription())
                 .category(resolveCategoryCode(request.getCategory()))
-                .lineOfBusiness(request.getLineOfBusiness() != null ? LineOfBusiness.valueOf(request.getLineOfBusiness()) : null)
+                .lineOfBusiness(parseLineOfBusiness(request.getLineOfBusiness()))
                 .productStatus(ProductStatus.DRAFT)
                 .version(1)
                 .effectiveFrom(request.getEffectiveFrom())

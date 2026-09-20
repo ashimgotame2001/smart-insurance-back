@@ -48,7 +48,13 @@ public abstract class ProductMapper {
         if (request.getName() != null) product.setName(request.getName());
         if (request.getDescription() != null) product.setDescription(request.getDescription());
         // category is resolved/validated in ProductServiceImpl
-        if (request.getLineOfBusiness() != null) product.setLineOfBusiness(LineOfBusiness.valueOf(request.getLineOfBusiness()));
+        if (request.getLineOfBusiness() != null) {
+            try {
+                product.setLineOfBusiness(LineOfBusiness.valueOf(request.getLineOfBusiness()));
+            } catch (IllegalArgumentException ex) {
+                throw new com.project.smartinsurance.commonService.exception.GlobalException("PRD-018", request.getLineOfBusiness());
+            }
+        }
         if (request.getEffectiveFrom() != null) product.setEffectiveFrom(request.getEffectiveFrom());
         if (request.getEffectiveTo() != null) product.setEffectiveTo(request.getEffectiveTo());
         if (request.getMinSumAssured() != null) product.setMinSumAssured(request.getMinSumAssured());
