@@ -1,0 +1,16 @@
+package com.project.smartinsurance.agentService.model.enums;
+
+public enum AgentDocumentType {
+    PASSPORT_PHOTO,
+    CITIZENSHIP_FRONT,
+    CITIZENSHIP_BACK,
+    PAN_COPY,
+    BANK_PROOF,
+    EDUCATION_CERTIFICATE,
+    CHARACTER_CERTIFICATE,
+    LICENSE_COPY,
+    APPOINTMENT_LETTER,
+    AGENT_AGREEMENT,
+    TRAINING_CERTIFICATE,
+    DIGITAL_SIGNATURE
+}
