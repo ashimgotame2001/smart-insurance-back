@@ -65,6 +65,11 @@ public class Product extends BaseEntity {
     private String regulatoryApprovalNumber;
     private Boolean regulatorReportingRequired;
 
+    /** When true, policies for this product must go through underwriting before issue. */
+    @Builder.Default
+    @Column(name = "manual_underwriting_required")
+    private Boolean manualUnderwritingRequired = false;
+
     @Column(columnDefinition = "TEXT")
     private String productFeatures;
 

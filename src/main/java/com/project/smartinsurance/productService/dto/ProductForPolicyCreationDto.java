@@ -35,6 +35,7 @@ public class ProductForPolicyCreationDto {
     private BigDecimal maxCommissionRate;
     private String commissionStructure;
     private Boolean groupProduct;
+    private Boolean manualUnderwritingRequired;
     private String linkedProductIds;
     private Boolean allowPartialWithdrawal;
     private String surrenderChargeSchedule;

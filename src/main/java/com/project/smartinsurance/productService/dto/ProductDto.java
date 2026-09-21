@@ -43,6 +43,7 @@ public class ProductDto {
     private Boolean regulatoryApprovalRequired;
     private String regulatoryApprovalNumber;
     private Boolean regulatorReportingRequired;
+    private Boolean manualUnderwritingRequired;
     private String productFeatures;
     private String termsAndConditions;
     private String policyWording;

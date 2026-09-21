@@ -100,6 +100,8 @@ public class ProductServiceImpl implements ProductService {
                 .regulatoryApprovalRequired(request.getRegulatoryApprovalRequired())
                 .regulatoryApprovalNumber(request.getRegulatoryApprovalNumber())
                 .regulatorReportingRequired(request.getRegulatorReportingRequired())
+                .manualUnderwritingRequired(request.getManualUnderwritingRequired() != null
+                        ? request.getManualUnderwritingRequired() : false)
                 .productFeatures(request.getProductFeatures())
                 .termsAndConditions(request.getTermsAndConditions())
                 .policyWording(request.getPolicyWording())
@@ -745,6 +747,7 @@ public class ProductServiceImpl implements ProductService {
         dto.setRegulatoryApprovalRequired(product.getRegulatoryApprovalRequired());
         dto.setRegulatoryApprovalNumber(product.getRegulatoryApprovalNumber());
         dto.setRegulatorReportingRequired(product.getRegulatorReportingRequired());
+        dto.setManualUnderwritingRequired(product.getManualUnderwritingRequired());
         dto.setProductFeatures(product.getProductFeatures());
         dto.setTermsAndConditions(product.getTermsAndConditions());
         dto.setPolicyWording(product.getPolicyWording());

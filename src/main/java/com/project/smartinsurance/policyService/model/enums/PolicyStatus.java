@@ -9,5 +9,6 @@ public enum PolicyStatus {
     SUSPENDED,
     REINSTATED,
     LAPSED,
-    TERMINATED
+    TERMINATED,
+    DECLINED
 }

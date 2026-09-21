@@ -38,6 +38,7 @@ public class PolicyServiceImpl implements PolicyService {
     private final PolicyMapper policyMapper;
     private final com.project.smartinsurance.billingService.service.PremiumLifecycleService premiumLifecycleService;
     private final com.project.smartinsurance.productService.service.ProductService productService;
+    private final com.project.smartinsurance.underwritingService.service.UnderwritingService underwritingService;
 
     @Override
     @Transactional
@@ -310,8 +311,18 @@ public class PolicyServiceImpl implements PolicyService {
     @Transactional
     public PolicyDto issuePolicy(UUID id) {
         Policy policy = findPolicyOrThrow(id);
+        if (policy.getPolicyStatus() == PolicyStatus.PENDING_APPROVAL) {
+            if (!underwritingService.isUnderwritingCleared(id)) {
+                throw new GlobalException("UW-014", id);
+            }
+            // Cleared by UW approval path already activates; treat as already issued
+            throw new GlobalException("UW-015", id);
+        }
         if (policy.getPolicyStatus() != PolicyStatus.DRAFT) {
             throw new GlobalException("POL-004", id);
+        }
+        if (underwritingService.requiresUnderwriting(policy.getProductCode())) {
+            throw new GlobalException("UW-016", policy.getProductCode());
         }
         validateProductAndPlan(policy.getProductCode(), policy.getPlanCode(), true);
         policy.setPolicyStatus(PolicyStatus.ACTIVE);

@@ -78,6 +78,7 @@ public abstract class ProductMapper {
         if (request.getRegulatoryApprovalRequired() != null) product.setRegulatoryApprovalRequired(request.getRegulatoryApprovalRequired());
         if (request.getRegulatoryApprovalNumber() != null) product.setRegulatoryApprovalNumber(request.getRegulatoryApprovalNumber());
         if (request.getRegulatorReportingRequired() != null) product.setRegulatorReportingRequired(request.getRegulatorReportingRequired());
+        if (request.getManualUnderwritingRequired() != null) product.setManualUnderwritingRequired(request.getManualUnderwritingRequired());
         if (request.getProductFeatures() != null) product.setProductFeatures(request.getProductFeatures());
         if (request.getTermsAndConditions() != null) product.setTermsAndConditions(request.getTermsAndConditions());
         if (request.getPolicyWording() != null) product.setPolicyWording(request.getPolicyWording());

@@ -1335,7 +1335,7 @@
     ]
   },
   {
-    "name": "Underwriting",
+    "name": "Underwriting Management",
     "code": "UNDERWRITING",
     "path": "/underwriting",
     "icon": "CheckSquareOutlined",
@@ -1344,6 +1344,24 @@
     "status": "ACTIVE",
     "subMenus": [
       {
+        "name": "Underwriting Queue",
+        "code": "UNDERWRITING_QUEUE",
+        "path": "/underwriting/queue",
+        "description": "View pending applications",
+        "permission": "PERM_UNDERWRITING_QUEUE_READ",
+        "status": "ACTIVE",
+        "icon": "ProfileOutlined"
+      },
+      {
+        "name": "Underwriter Decision",
+        "code": "UNDERWRITER_DECISION",
+        "path": "/underwriting/decision",
+        "description": "Final underwriter decision",
+        "permission": "PERM_UNDERWRITER_DECISION_READ",
+        "status": "ACTIVE",
+        "icon": "CheckCircleOutlined"
+      },
+      {
         "name": "Approval Workflow",
         "code": "UNDERWRITING_APPROVAL",
         "path": "/underwriting/approval",
@@ -1351,33 +1369,6 @@
         "permission": "PERM_UNDERWRITING_APPROVAL_READ",
         "status": "ACTIVE",
         "icon": "CheckSquareOutlined"
-      },
-      {
-        "name": "Medical Assessment",
-        "code": "MEDICAL_ASSESSMENT",
-        "path": "/underwriting/medical",
-        "description": "Review medical reports",
-        "permission": "PERM_MEDICAL_ASSESSMENT_READ",
-        "status": "ACTIVE",
-        "icon": "MedicineBoxOutlined"
-      },
-      {
-        "name": "Property Inspection",
-        "code": "PROPERTY_INSPECTION",
-        "path": "/underwriting/property-insp",
-        "description": "Property inspection reports",
-        "permission": "PERM_PROPERTY_INSPECTION_READ",
-        "status": "ACTIVE",
-        "icon": "HomeOutlined"
-      },
-      {
-        "name": "Reinsurance Review",
-        "code": "REINSURANCE_REVIEW",
-        "path": "/underwriting/re-review",
-        "description": "Review for reinsurance requirements",
-        "permission": "PERM_REINSURANCE_REVIEW_READ",
-        "status": "ACTIVE",
-        "icon": "InsuranceOutlined"
       },
       {
         "name": "Risk Assessment",
@@ -1398,31 +1389,13 @@
         "icon": "BarChartOutlined"
       },
       {
-        "name": "Survey Reports",
-        "code": "SURVEY_REPORTS",
-        "path": "/underwriting/surveys",
-        "description": "Review survey reports",
-        "permission": "PERM_SURVEY_REPORTS_READ",
+        "name": "Medical Assessment",
+        "code": "MEDICAL_ASSESSMENT",
+        "path": "/underwriting/medical",
+        "description": "Review medical reports",
+        "permission": "PERM_MEDICAL_ASSESSMENT_READ",
         "status": "ACTIVE",
-        "icon": "FileTextOutlined"
-      },
-      {
-        "name": "Underwriter Decision",
-        "code": "UNDERWRITER_DECISION",
-        "path": "/underwriting/decision",
-        "description": "Final underwriter decision",
-        "permission": "PERM_UNDERWRITER_DECISION_READ",
-        "status": "ACTIVE",
-        "icon": "CheckCircleOutlined"
-      },
-      {
-        "name": "Underwriting Queue",
-        "code": "UNDERWRITING_QUEUE",
-        "path": "/underwriting/queue",
-        "description": "View pending applications",
-        "permission": "PERM_UNDERWRITING_QUEUE_READ",
-        "status": "ACTIVE",
-        "icon": "ProfileOutlined"
+        "icon": "MedicineBoxOutlined"
       },
       {
         "name": "Vehicle Inspection",
@@ -1432,6 +1405,33 @@
         "permission": "PERM_VEHICLE_INSPECTION_READ",
         "status": "ACTIVE",
         "icon": "CarOutlined"
+      },
+      {
+        "name": "Property Inspection",
+        "code": "PROPERTY_INSPECTION",
+        "path": "/underwriting/property-insp",
+        "description": "Property inspection reports",
+        "permission": "PERM_PROPERTY_INSPECTION_READ",
+        "status": "ACTIVE",
+        "icon": "HomeOutlined"
+      },
+      {
+        "name": "Survey Reports",
+        "code": "SURVEY_REPORTS",
+        "path": "/underwriting/surveys",
+        "description": "Review survey reports",
+        "permission": "PERM_SURVEY_REPORTS_READ",
+        "status": "ACTIVE",
+        "icon": "FileTextOutlined"
+      },
+      {
+        "name": "Reinsurance Review",
+        "code": "REINSURANCE_REVIEW",
+        "path": "/underwriting/re-review",
+        "description": "Review for reinsurance requirements",
+        "permission": "PERM_REINSURANCE_REVIEW_READ",
+        "status": "ACTIVE",
+        "icon": "InsuranceOutlined"
       }
     ]
   },
